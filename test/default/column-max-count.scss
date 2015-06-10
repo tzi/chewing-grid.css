@@ -1,0 +1,2 @@
+@import '../../chewing-grid-mixin';
+@include chew-row($column-max-count: 3);
