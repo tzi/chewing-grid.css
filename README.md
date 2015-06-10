@@ -43,7 +43,8 @@ Let sart with the minimum markup:
 Add the `chew-row--{n}` markup, to set the column limit: 
 
 ```html
-<div class="chew-row chew-row--5">
+<!-- 4 columns maximum -->
+<div class="chew-row chew-row--4">
     <div class="chew-cell">1</div>
     <div class="chew-cell">2</div>
     <div class="chew-cell">3</div>
@@ -109,15 +110,9 @@ Add some `chew-cell--ghost` markup.
 
 ```html
 <div class="chew-row chew-row--3">
-    <div class="chew-cell">
-        <div class="chew-card">1</div>
-    </div>
-    <div class="chew-cell">
-        <div class="chew-card">2</div>
-    </div>
-    <div class="chew-cell">
-        <div class="chew-card">3</div>
-    </div>
+    <div class="chew-cell">1</div>
+    <div class="chew-cell">2</div>
+    <div class="chew-cell">3</div>
     ...
     <div class="chew-cell chew-cell--ghost"></div>
     <div class="chew-cell chew-cell--ghost"></div>
