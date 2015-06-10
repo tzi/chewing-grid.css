@@ -16,8 +16,10 @@ Index
 1. [Quick start](#1-quick-start)
 2. [Limit the column number](#2-limit-the-column-number)
 3. [Set a minimum card width](#3-set-a-minimum-card-width)
-4. [Set a maximum card width](#3-set-a-maximum-card-width)
+4. [Set a maximum card width](#4-set-a-maximum-card-width)
 5. [Prevent last row expansion](#5-prevent-last-row-expansion)
+6. [How to Contribute] (#how-to-contribute)
+7. [Author & Community] (#author--community)
 
 
 1. Quick start
@@ -123,3 +125,25 @@ Add some `chew-cell--ghost` markup.
 ```
 
 You have to add at least `column-max-count - 1` columns.
+
+
+How to Contribute
+--------
+
+### Get involved
+
+1. [Star](https://github.com/tzi/ChewingGrid.js/stargazers) the project!
+2. [Report a bug](https://github.com/tzi/ChewingGrid.js/issues/new) that you have found.
+3. Tweet and blog about `ChewingGrid` and [Let me know](https://twitter.com/iamtzi) about it.
+
+### Pull Requests
+
+Pull requests are highly appreciated.<br>
+Please review the [guidelines for contributing](https://github.com/tzi/ChewingGrid/blob/master/CONTRIBUTING.md) to go further.
+
+
+Author & Community
+--------
+
+`ChewingGrid` is under [MIT License](http://opensource.org/licenses/MIT).<br>
+It was created & is maintained by [Thomas ZILLIOX](http://tzi.fr).
