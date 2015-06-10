@@ -6,7 +6,13 @@ An ideal CSS Grid for card design:
  * Adapt to any layout, there is no media-query
  * Fluid card size, thanks to Flexbox (<3) or the float fallback
  * Minimum & maximum width on card
+
+You can play with it: [Live demo](http://tzi.github.io/ChewingGrid/example/index.html)!
+
  
+Index
+------
+
 1. [Quick start](#1-quick-start)
 2. [Limit the column number](#2-limit-the-column-number)
 3. [Set a minimum card width](#3-set-a-minimum-card-width)
