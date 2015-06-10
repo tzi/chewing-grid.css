@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chewing Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../chewing-grid-atomic.css"/>
+    <style>
+        style[contenteditable] {
+            font-family: monospace;
+            white-space: pre-wrap;
+
+            padding: 1em;
+            border: 1px solid lightblue;
+        }
+        style[contenteditable]:focus {
+            border-color: tomato;
+        }
+        .table-row {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        .table-cell {
+            display: table-cell;
+            width: 1px;
+        }
+        
+        body {
+            margin: 0;
+        }
+        .demo {
+            background: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>ChewingGrid</h1>
+
+<div style="margin: 2em 1em">
+    <div class="table-row">
+        <style contenteditable class="table-cell">
+            /* Card min-width */
+            .chew-cell {
+                min-width: 200px;
+            }
+        </style>
+        <style contenteditable class="table-cell">
+            /* Card max-width */
+            .chew-card {
+                max-width: none;
+            }
+        </style>
+        <style contenteditable class="table-cell">
+            /* Max 4 columns */
+            .chew-cell {
+                flex-basis: calc(100% / 4);
+            }
+        </style>
+        <style contenteditable class="table-cell">
+            /* 1em gutter */
+            .chew-cell {
+                padding: 0 0.5em;
+            }
+        </style>
+    </div>
+</div>
+
+<div class="chew-row">
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">1</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">2</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">3</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">4</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">5</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">6</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">7</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">8</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">9</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">10</div>
+        </div>
+    </div>
+    <div class="chew-cell">
+        <div class="chew-card">
+            <div class="demo">11</div>
+        </div>
+    </div>
+    <div class="chew-cell chew-cell--ghost">12</div>
+    <div class="chew-cell chew-cell--ghost">13</div>
+    <div class="chew-cell chew-cell--ghost">14</div>
+    <div class="chew-cell chew-cell--ghost">15</div>
+    <div class="chew-cell chew-cell--ghost">16</div>
+    <div class="chew-cell chew-cell--ghost">17</div>
+    <div class="chew-cell chew-cell--ghost">18</div>
+    <div class="chew-cell chew-cell--ghost">19</div>
+</div>
+<script src="unindentor.js"></script>
+<script>
+    unindentor.unindentElementList('style[contenteditable]');
+</script>
+</body>
+</html>
