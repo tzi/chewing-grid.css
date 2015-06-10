@@ -18,7 +18,7 @@
   min-width: 200px;
   /* Allow to add gutter */
   box-sizing: border-box;
-  padding: 0 0; }
+  padding: 0; }
 .chew-cell--ghost {
   /* Could be use to create ghost cells 
      And prevent your last item to expand

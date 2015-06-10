@@ -1,2 +1,2 @@
-@import '../../chewing-grid-mixin';
+@import '../chewing-grid-mixin';
 @include chew-row($cell-gutter: 2em);
