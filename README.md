@@ -125,8 +125,8 @@ You have to add at least `column-max-count - 1` columns.
 How to Contribute
 --------
 
-1. [Star](https://github.com/tzi/ChewingGrid.js/stargazers) the project!
-2. [Report a bug](https://github.com/tzi/ChewingGrid.js/issues/new) that you have found.
+1. [Star](https://github.com/tzi/ChewingGrid/stargazers) the project!
+2. [Report a bug](https://github.com/tzi/ChewingGrid/issues/new) that you have found.
 3. Tweet and blog about `ChewingGrid` and [Let me know](https://twitter.com/iamtzi) about it.
 4. [Pull requests](https://github.com/tzi/ChewingGrid/blob/master/CONTRIBUTING.md) are also highly appreciated.
 
