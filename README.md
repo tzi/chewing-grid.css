@@ -25,9 +25,16 @@ Index
 1. Quick start
 -------
 
+Install `ChewingGrid` via bower and add it to bower.json dependencies
+
+```sh
+bower install <package> --save
+```
+
 Let sart with the minimum markup: 
 
 ```html
+<link rel="stylesheet" type="text/css" href="build/chewing-grid-atomic.css"/>
 <div class="chew-row">
     <div class="chew-cell">1</div>
     <div class="chew-cell">2</div>
