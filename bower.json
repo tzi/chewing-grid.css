@@ -5,7 +5,7 @@
   "authors": [
     "Thomas ZILLIOX"
   ],
-  "description": "An ideal CSS Grid for card design made with flexbox & love",
+  "description": "An ideal CSS Grid for card design, made with flexbox & love",
   "main": "build/chewing-grid-atomic.css",
   "keywords": [
     "grid",

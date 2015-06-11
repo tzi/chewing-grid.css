@@ -7,7 +7,7 @@ An ideal CSS Grid for card design:
  * Fluid card size, thanks to Flexbox (<3) or the float fallback
  * Minimum & maximum width on card
 
-You can play with it: [Live demo](http://tzi.github.io/ChewingGrid/example/index.html)!
+You can play with it: [Live demo](http://tzi.github.io/ChewingGrid/example)!
 
  
 Index
@@ -25,10 +25,10 @@ Index
 1. Quick start
 -------
 
-Install `ChewingGrid` via bower and add it to bower.json dependencies
+Install ChewingGrid via bower and add it to bower.json dependencies
 
 ```sh
-bower install <package> --save
+bower install chewing-grid --save
 ```
 
 Let sart with the minimum markup: 
@@ -134,12 +134,12 @@ How to Contribute
 
 1. [Star](https://github.com/tzi/ChewingGrid/stargazers) the project!
 2. [Report a bug](https://github.com/tzi/ChewingGrid/issues/new) that you have found.
-3. Tweet and blog about `ChewingGrid` and [Let me know](https://twitter.com/iamtzi) about it.
+3. Tweet and blog about ChewingGrid and [Let me know](https://twitter.com/iamtzi) about it.
 4. [Pull requests](https://github.com/tzi/ChewingGrid/blob/master/CONTRIBUTING.md) are also highly appreciated.
 
 
 Author & Community
 --------
 
-`ChewingGrid` is under [MIT License](http://opensource.org/licenses/MIT).<br>
+ChewingGrid is under [MIT License](http://opensource.org/licenses/MIT).<br>
 It was created & is maintained by [Thomas ZILLIOX](http://tzi.fr).
