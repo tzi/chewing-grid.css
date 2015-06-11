@@ -16,7 +16,11 @@
   min-width: 200px;
   /* Allow to add gutter */
   box-sizing: border-box;
-  padding: 1em; }
+  padding: 1em;
+  /* Flex implementation */
+  flex-basis: auto;
+  /* Float fallback */
+  width: auto; }
 .chew-cell--ghost {
   /* Could be use to create ghost cells 
      And prevent your last item to expand
@@ -24,7 +28,7 @@
   */
   visibility: hidden;
   height: 0; }
-.chew-cell-card {
+.chew-card {
   /* Centered card */
   display: block;
   margin: 0 auto;

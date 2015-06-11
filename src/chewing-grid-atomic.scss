@@ -1,0 +1,17 @@
+$chewing-prefix: 'chew-';
+
+@import 'chewing-grid.mixin';
+@include chew-grid($prefix: $chewing-prefix);
+
+/* Atomic column modifiers */
+.#{$chewing-prefix} {
+    &row--auto > &cell {
+        @include chew-cell--column();
+    }
+
+    @for $counter from 1 through 12 {
+        &row--#{$counter} > &cell {
+            @include chew-cell--column($counter);
+        }
+    }
+}

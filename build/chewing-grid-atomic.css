@@ -1,0 +1,132 @@
+.chew-row {
+  /* Flex implementation */
+  display: flex;
+  flex-wrap: wrap;
+}
+.chew-row:after {
+  /* Clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+.chew-cell {
+  /* Flex implementation */
+  flex: 1;
+  /* Float fallback */
+  float: left;
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px;
+  /* Allow to add gutter */
+  box-sizing: border-box;
+  padding: 0;
+  /* Flex implementation */
+  flex-basis: auto;
+  /* Float fallback */
+  width: auto;
+}
+.chew-cell--ghost {
+  /* Could be use to create ghost cells 
+     And prevent your last item to expand
+     And cover entirely the last row
+  */
+  visibility: hidden;
+  height: 0;
+}
+.chew-card {
+  /* Centered card */
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+/* Atomic column modifiers */
+.chew-row--auto > .chew-cell {
+  /* Flex implementation */
+  flex-basis: auto;
+  /* Float fallback */
+  width: auto;
+}
+.chew-row--1 > .chew-cell {
+  /* Max 1 columns */
+  /* Flex implementation */
+  flex-basis: 100%;
+  /* Float fallback */
+  width: 100%;
+}
+.chew-row--2 > .chew-cell {
+  /* Max 2 columns */
+  /* Flex implementation */
+  flex-basis: 50%;
+  /* Float fallback */
+  width: 50%;
+}
+.chew-row--3 > .chew-cell {
+  /* Max 3 columns */
+  /* Flex implementation */
+  flex-basis: 33.33333%;
+  /* Float fallback */
+  width: 33.33333%;
+}
+.chew-row--4 > .chew-cell {
+  /* Max 4 columns */
+  /* Flex implementation */
+  flex-basis: 25%;
+  /* Float fallback */
+  width: 25%;
+}
+.chew-row--5 > .chew-cell {
+  /* Max 5 columns */
+  /* Flex implementation */
+  flex-basis: 20%;
+  /* Float fallback */
+  width: 20%;
+}
+.chew-row--6 > .chew-cell {
+  /* Max 6 columns */
+  /* Flex implementation */
+  flex-basis: 16.66667%;
+  /* Float fallback */
+  width: 16.66667%;
+}
+.chew-row--7 > .chew-cell {
+  /* Max 7 columns */
+  /* Flex implementation */
+  flex-basis: 14.28571%;
+  /* Float fallback */
+  width: 14.28571%;
+}
+.chew-row--8 > .chew-cell {
+  /* Max 8 columns */
+  /* Flex implementation */
+  flex-basis: 12.5%;
+  /* Float fallback */
+  width: 12.5%;
+}
+.chew-row--9 > .chew-cell {
+  /* Max 9 columns */
+  /* Flex implementation */
+  flex-basis: 11.11111%;
+  /* Float fallback */
+  width: 11.11111%;
+}
+.chew-row--10 > .chew-cell {
+  /* Max 10 columns */
+  /* Flex implementation */
+  flex-basis: 10%;
+  /* Float fallback */
+  width: 10%;
+}
+.chew-row--11 > .chew-cell {
+  /* Max 11 columns */
+  /* Flex implementation */
+  flex-basis: 9.09091%;
+  /* Float fallback */
+  width: 9.09091%;
+}
+.chew-row--12 > .chew-cell {
+  /* Max 12 columns */
+  /* Flex implementation */
+  flex-basis: 8.33333%;
+  /* Float fallback */
+  width: 8.33333%;
+}

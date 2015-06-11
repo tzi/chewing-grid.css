@@ -1,0 +1,8 @@
+@mixin chew-card($cell-max-width: 300px)
+{
+  /* Centered card */
+  display: block;
+  margin: 0 auto;
+  max-width: $cell-max-width;
+}
+

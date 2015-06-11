@@ -1,0 +1,10 @@
+@mixin chew-cell--ghost()
+{
+  /* Could be use to create ghost cells 
+     And prevent your last item to expand
+     And cover entirely the last row
+  */
+  visibility: hidden;
+  height: 0;
+}
+

@@ -1,0 +1,30 @@
+// Atomic mixins
+@import 'atomic-mixins/chewing-row.mixin';
+@import 'atomic-mixins/chewing-cell.mixin';
+@import 'atomic-mixins/chewing-cell--column.mixin';
+@import 'atomic-mixins/chewing-cell--ghost.mixin';
+@import 'atomic-mixins/chewing-card.mixin';
+
+// Main mixin
+@mixin chew-grid($cell-min-width: 200px, $cell-max-width: 300px, $cell-gutter: 0, $column-max-count: auto, $float-fallback: left, $prefix: 'chew-') 
+{
+    .#{$prefix} {
+
+        &row {
+            @include chew-row();
+        }
+
+        &cell {
+            @include chew-cell($cell-min-width, $cell-gutter, $float-fallback);
+            @include chew-cell--column($column-max-count);
+        }
+
+        &cell--ghost {
+            @include chew-cell--ghost();
+        }
+
+        &card {
+            @include chew-card($cell-max-width);
+        }
+    }
+}

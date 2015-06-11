@@ -1,0 +1,15 @@
+@mixin chew-cell--column($column-max-count: auto)
+{
+  $width: $column-max-count;
+  @if ($column-max-count != auto) {
+    /* Max #{$column-max-count} columns */
+    $width: 100% / $column-max-count;
+  }
+
+  /* Flex implementation */
+  flex-basis: $width;
+
+  /* Float fallback */
+  width: $width;
+}
+

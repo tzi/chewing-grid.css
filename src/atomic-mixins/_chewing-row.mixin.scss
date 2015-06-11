@@ -1,0 +1,14 @@
+@mixin chew-row()
+{
+  /* Flex implementation */
+  display: flex;
+  flex-wrap: wrap;
+
+  &:after {
+    /* Clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
