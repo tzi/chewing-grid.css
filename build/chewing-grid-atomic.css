@@ -40,6 +40,7 @@
 .chew-card {
   /* Centered card */
   display: block;
+  box-sizing: border-box;
   height: 100%;
   margin: 0 auto;
   max-width: 300px;
