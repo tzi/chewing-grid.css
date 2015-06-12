@@ -105,7 +105,7 @@ Override the default maximum width (300px) by adding this CSS rule:
 
 ```css
 .chew-card {
-    min-width: 250px
+    max-width: 400px
 }
 ```
 
@@ -126,7 +126,7 @@ Add some `chew-cell--ghost` markup.
 </div>
 ```
 
-You have to add at least `column-max-count - 1` columns.
+You have to add at least `column-max-count - 1` items.
 
 
 How to Contribute
