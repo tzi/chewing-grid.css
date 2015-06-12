@@ -31,12 +31,34 @@
         body {
             padding: 0 1em;
         }
+        .chew-row {
+            background: aliceblue;
+        }
         .demo {
             background: lightblue;
             text-align: center;
         }
         .rythm {
-            margin-top: 1.5em;
+            margin-top: 0.5em;
+        }
+        .info {
+            text-align: right;
+            font-style: italic;
+            color: slategrey;
+        }
+
+        .resizable {
+            position: relative;
+            overflow: hidden;
+        }
+        .resizable .resizer {
+            position:absolute;
+            right: 0;
+            bottom: 0;
+            width: 10px;
+            height: 10px;
+            background: tomato;
+            cursor: se-resize;
         }
     </style>
 </head>
@@ -76,7 +98,7 @@
 
 <p>And see the result.</p>
 
-<div class="chew-row rythm">
+<div class="chew-row rythm resizable">
     <div class="chew-cell">
         <div class="chew-card">
             <div class="demo">1</div>
@@ -142,10 +164,11 @@
     <div class="chew-cell chew-cell--ghost">19</div>
 </div>
 
-<p>
-   <i>Do not forget to resize your browser ;)</i>
+<p class="info">
+   use the red square to chewing the grid ;)
 </p>
 <script src="unindentor.js"></script>
+<script src="resizer.js"></script>
 <script>
     unindentor.unindentElementList('style[contenteditable]');
 </script>
