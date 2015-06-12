@@ -21,6 +21,12 @@
 
         &cell--ghost {
             @include chew-cell--ghost();
+            padding: 0;
+        }
+        
+        &cell.#{$prefix}cell--ghost {
+            /* Reset the cell gutter */
+            padding: 0;
         }
 
         &card {
