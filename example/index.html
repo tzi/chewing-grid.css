@@ -12,27 +12,17 @@
             font-family: monospace;
             white-space: pre-wrap;
 
+            display: block;
             padding: 1em;
             border: 1px solid lightblue;
+            background: white;
         }
         style[contenteditable]:focus {
             border-color: tomato;
         }
-        .table-row {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-        }
-        .table-cell {
-            display: table-cell;
-            width: 1px;
-        }
         
         body {
-            padding: 0 1em;
-        }
-        .chew-row {
-            background: aliceblue;
+            padding: 0 1em 3em;
         }
         .demo {
             background: lightblue;
@@ -51,6 +41,9 @@
             position: relative;
             overflow: hidden;
         }
+        .chew-row.resizable {
+            background: aliceblue;
+        }
         .resizable .resizer {
             position:absolute;
             right: 0;
@@ -65,38 +58,7 @@
 <body>
 <h1>Chewing Grid Example</h1>
 
-<p>Change the settings,</p>
-
-<div class="rythm">
-    <div class="table-row">
-        <style contenteditable class="table-cell">
-            /* Card min-width */
-            .chew-cell {
-                min-width: 200px;
-            }
-        </style>
-        <style contenteditable class="table-cell">
-            /* Card max-width */
-            .chew-card {
-                max-width: none;
-            }
-        </style>
-        <style contenteditable class="table-cell">
-            /* Max 4 columns */
-            .chew-cell {
-                flex-basis: calc(100% / 4);
-            }
-        </style>
-        <style contenteditable class="table-cell">
-            /* Horizontal & Vertical 1em gutter */
-            .chew-cell {
-                padding: 0.5em;
-            }
-        </style>
-    </div>
-</div>
-
-<p>and see the result.</p>
+<p>See a live demo:</p>
 
 <div class="chew-row rythm resizable">
     <div class="chew-cell">
@@ -164,9 +126,57 @@
     <div class="chew-cell chew-cell--ghost">19</div>
 </div>
 
+<p>Change the current settings:</p>
+
+<div class="rythm">
+    <div class="chew-row resizable">
+        <div class="chew-cell">
+            <style contenteditable class="chew-card">
+                /* Card min-width */
+                .chew-cell {
+                    min-width: 200px;
+                }
+            </style>
+        </div>
+        <div class="chew-cell">
+            <style contenteditable class="chew-card">
+                /* Card max-width */
+                .chew-card {
+                    max-width: none;
+                }
+            </style>
+        </div>
+        <div class="chew-cell">
+            <style contenteditable class="chew-card">
+                /* Max 4 columns */
+                .chew-cell {
+                    flex-basis: calc(100% / 4);
+                }
+            </style>
+        </div>
+        <div class="chew-cell">
+                <style contenteditable class="chew-card">
+                /* Horizontal & Vertical 1em gutter */
+                .chew-cell {
+                    padding: 0.5em;
+                }
+            </style>
+        </div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+        <div class="chew-cell chew-cell--ghost"></div>
+    </div>
+</div>
+
 <p class="info">
-   use the red square to chewing the grid ;)
+    use the red squares to chewing the grid ;)
 </p>
+
 <script src="unindentor.js"></script>
 <script src="resizer.js"></script>
 <script>

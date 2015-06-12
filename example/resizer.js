@@ -8,15 +8,20 @@
 
   var startX, startWidth, resizable;
 
-  function createResizer() {
-    var resizer = document.createElement('div');
-    resizer.className = 'resizer';
-    resizable.appendChild(resizer);
-    
-    resizer.addEventListener('mousedown', initDrag, false);
+  function start() {
+    var resizableList = document.querySelectorAll('.resizable');
+    for (var i=0; i<resizableList.length; i++) {
+      var resizable = resizableList[i];
+      var resizer = document.createElement('div');
+      resizer.className = 'resizer';
+      resizable.appendChild(resizer);
+      resizer.addEventListener('mousedown', initDrag, false);
+    }
   }
 
   function initDrag(e) {
+    var target = target = e.target || e.srcElement;
+    resizable = target.parentNode;
     startX = e.clientX;
     startWidth = parseInt(document.defaultView.getComputedStyle(resizable).width, 10);
     document.documentElement.addEventListener('mousemove', doDrag, false);
@@ -32,7 +37,6 @@
     document.documentElement.removeEventListener('mouseup', stopDrag, false);
   }
 
-  resizable = document.querySelector('.resizable');
-  createResizer();
+  start();
 });
 
