@@ -47,17 +47,15 @@ h6 {
     line-height: 1.5rem;
 }
 h1 {
-    font-size: 2.828rem;
-    line-height: 3rem;
-    margin-top: 3rem;
-}
-h2 {
     font-size: 1.828rem;
     line-height: 2rem;
     margin-top: 2rem;
 }
-h3 {
+h2 {
     font-size: 1.414rem;
+}
+h3 {
+    font-size: 1rem;
 }
 h4 {
     font-size: 0.707rem;
