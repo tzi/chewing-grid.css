@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Chewing Grid</title>
+    <title>Chewing Grid Demonstration page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="typebase.css"/>
     <link rel="stylesheet" type="text/css" href="../build/chewing-grid-atomic.css"/>
     <style>
         style[contenteditable] {
@@ -27,20 +29,23 @@
         }
         
         body {
-            margin: 0;
+            padding: 0 1em;
         }
         .demo {
             background: lightblue;
             text-align: center;
         }
+        .rythm {
+            margin-top: 1.5em;
+        }
     </style>
 </head>
 <body>
-<h1>Chewing Grid - Demonstration page</h1>
+<h1 class="hug">Chewing Grid Example</h1>
 
-<h2>change the settings</h2>
+<p>Change the settings</p>
 
-<div style="margin: 2em 1em">
+<div class="rythm">
     <div class="table-row">
         <style contenteditable class="table-cell">
             /* Card min-width */
@@ -69,9 +74,9 @@
     </div>
 </div>
 
-<h2>and see the result</h2>
+<p>And see the result.</p>
 
-<div class="chew-row">
+<div class="chew-row rythm">
     <div class="chew-cell">
         <div class="chew-card">
             <div class="demo">1</div>
