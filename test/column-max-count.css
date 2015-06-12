@@ -17,6 +17,7 @@
   /* Allow to add gutter */
   box-sizing: border-box;
   padding: 0;
+  /* Max 3 columns */
   /* Flex implementation */
   flex-basis: 33.33333%;
   /* Float fallback */
@@ -27,9 +28,14 @@
      And cover entirely the last row
   */
   visibility: hidden;
-  height: 0; }
+  height: 0;
+  padding: 0; }
+.chew-cell.chew-cell--ghost {
+  /* Reset the cell gutter */
+  padding: 0; }
 .chew-card {
   /* Centered card */
   display: block;
+  height: 100%;
   margin: 0 auto;
   max-width: 300px; }
