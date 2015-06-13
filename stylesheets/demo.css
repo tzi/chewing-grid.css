@@ -37,3 +37,9 @@ style[contenteditable]:focus {
 .chew-row.resizable {
     background: aliceblue;
 }
+
+/* GITHUB RIBBON */
+.gh-ribbon {
+    position: absolute;
+    top: 0; right: 0; border: 0;
+}
