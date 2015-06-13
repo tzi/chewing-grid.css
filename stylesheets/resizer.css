@@ -1,0 +1,26 @@
+.resizable {
+    position: relative;
+}
+.resizable .resizer {
+    position:absolute;
+    left: 100%;
+    top: 0; bottom: 0;
+    width: 6px;
+    border: 1px darkgrey solid;
+    border-width: 0 1px;
+    cursor: col-resize;
+}
+.resizable .resizer:before,
+.resizable .resizer:after {
+    content: '';
+    position: absolute;
+    left:0; right: 0; top: 0; bottom: 0;
+    width: 2px;
+    height: 6px;
+    margin: auto;
+    border: 2px dimgrey solid;
+    border-width: 2px 0;
+}
+.resizable .resizer:after {
+    height: 14px;
+}

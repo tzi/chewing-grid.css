@@ -1,0 +1,39 @@
+
+/* RESET */
+body {
+    padding: 0 1em 3em;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* DEMO PAGE */
+style[contenteditable] {
+    font-family: monospace;
+    white-space: pre-wrap;
+
+    display: block;
+    padding: 1em;
+    border: 1px solid lightblue;
+    background: white;
+}
+style[contenteditable]:focus {
+    border-color: tomato;
+}
+.demo {
+    background: lightblue;
+    text-align: center;
+}
+.rythm {
+    margin-top: 0.5em;
+}
+.info {
+    text-align: right;
+    font-style: italic;
+    color: dimgrey;
+}
+.chew-row.resizable {
+    background: aliceblue;
+}

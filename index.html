@@ -4,55 +4,12 @@
     <meta charset="utf-8">
     <title>Chewing Grid Demonstration page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="typebase.css"/>
-    <link rel="stylesheet" type="text/css" href="../build/chewing-grid-atomic.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/typebase.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/resizer.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="build/chewing-grid-atomic.css"/>
     <style>
-        style[contenteditable] {
-            font-family: monospace;
-            white-space: pre-wrap;
-
-            display: block;
-            padding: 1em;
-            border: 1px solid lightblue;
-            background: white;
-        }
-        style[contenteditable]:focus {
-            border-color: tomato;
-        }
-        
-        body {
-            padding: 0 1em 3em;
-        }
-        .demo {
-            background: lightblue;
-            text-align: center;
-        }
-        .rythm {
-            margin-top: 0.5em;
-        }
-        .info {
-            text-align: right;
-            font-style: italic;
-            color: dimgrey;
-        }
-
-        .resizable {
-            position: relative;
-            overflow: hidden;
-        }
-        .chew-row.resizable {
-            background: aliceblue;
-        }
-        .resizable .resizer {
-            position:absolute;
-            right: 0;
-            bottom: 0;
-            width: 10px;
-            height: 10px;
-            background: tomato;
-            cursor: se-resize;
-        }
     </style>
 </head>
 <body>
@@ -174,11 +131,11 @@
 </div>
 
 <p class="info">
-    use the red squares to resize the grid ;)
+    use the right bars to resize the grids ;)
 </p>
 
-<script src="unindentor.js"></script>
-<script src="resizer.js"></script>
+<script src="javascript/unindentor.js"></script>
+<script src="javascript/resizer.js"></script>
 <script>
     unindentor.unindentElementList('style[contenteditable]');
 </script>
