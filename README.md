@@ -7,7 +7,7 @@ An ideal CSS Grid for card design:
  * Fluid card size, thanks to Flexbox (<3) or the float fallback
  * Minimum & maximum width on card
 
-You can play with it: [Live demo](http://tzi.github.io/ChewingGrid/example)!
+You can play with it: [Live demo](http://tzi.github.io/ChewingGrid)!
 
  
 Index

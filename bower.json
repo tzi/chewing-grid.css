@@ -18,7 +18,6 @@
     "**/.*",
     "test",
     "test.sh",
-    "example",
     "CONTRIBUTING.md"
   ]
 }
