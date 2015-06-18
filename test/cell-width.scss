@@ -1,2 +1,2 @@
 @import '../src/mixins/grid.mixin';
-@include chewing-grid($cell-min-width: 100px, $cell-max-width: 150px);
+@include chewing-grid($card-min-width: 100px, $card-max-width: 150px);

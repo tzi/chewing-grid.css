@@ -4,12 +4,12 @@
 @import 'atomic/cell--column.mixin';
 @import 'atomic/cell--ghost.mixin';
 @import 'atomic/cell--gutter.mixin';
-@import 'atomic/cell--min-width.mixin';
 @import 'atomic/card.mixin';
+@import 'atomic/card--min-width.mixin';
 @import 'atomic/card--max-width.mixin';
 
 // Main mixin
-@mixin chewing-grid($cell-min-width: 200px, $cell-max-width: 300px, $cell-gutter: 0, $column-max-count: auto, $prefix: 'chew-') 
+@mixin chewing-grid($card-min-width: 200px, $card-max-width: 300px, $card-gutter: 0, $column-max-count: auto, $prefix: 'chew-') 
 {
     .#{$prefix} {
 
@@ -19,8 +19,7 @@
 
         &cell {
             @include chewing-grid__cell();
-            @include chewing-grid__cell--min-width($cell-min-width);
-            @include chewing-grid__cell--gutter($cell-gutter);
+            @include chewing-grid__cell--gutter($card-gutter);
             @include chewing-grid__cell--column($column-max-count);
         }
         
@@ -31,7 +30,9 @@
 
         &card {
             @include chewing-grid__card();
-            @include chewing-grid__card--max-width($cell-max-width);
+            /* Trigger item wrapping with flexbox & float */
+            @include chewing-grid__card--min-width($card-min-width);
+            @include chewing-grid__card--max-width($card-max-width);
         }
     }
 }

@@ -24,8 +24,8 @@
 .#{$chewing-prefix} {
     @for $counter from 1 through 20 {
         $min: $counter * 50;
-        &row--cell-min-#{$min} > &cell {
-            @include chewing-grid__cell--min-width($min * 1px);
+        &row--card-min-#{$min} > &card {
+            @include chewing-grid__card--min-width($min * 1px);
         }
     }
 }
@@ -34,7 +34,7 @@
 .#{$chewing-prefix} {
     @for $counter from 1 through 20 {
         $max: $counter * 50;
-        &row--cell-max-#{$max} > &card {
+        &row--card-max-#{$max} > &card {
             @include chewing-grid__card--max-width($max * 1px);
         }
     }

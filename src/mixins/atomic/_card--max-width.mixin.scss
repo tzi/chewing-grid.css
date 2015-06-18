@@ -1,5 +1,5 @@
-@mixin chewing-grid__card--max-width($cell-max-width: 300px)
+@mixin chewing-grid__card--max-width($card-max-width: 300px)
 {
-  max-width: $cell-max-width;
+  max-width: $card-max-width;
 }
 

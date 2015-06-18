@@ -3,6 +3,11 @@
   /* Flex implementation */
   display: flex;
   flex-wrap: wrap;
+  
+  /* Unset list styles */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   &:after {
     /* Clearfix */

@@ -2,6 +2,10 @@
   /* Flex implementation */
   display: flex;
   flex-wrap: wrap;
+  /* Unset list styles */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .chew-row:after {
   /* Clearfix */
@@ -12,12 +16,12 @@
 .chew-cell {
   /* Flex implementation */
   flex: 1;
+  /* Make the card full height */
+  display: flex;
   /* Float fallback */
   float: left;
   /* Allow to add gutter via padding without extending the box */
   box-sizing: border-box;
-  /* Trigger item wrapping with flexbox & float */
-  min-width: 200px;
   padding: 0;
   /* Flex implementation */
   flex-basis: auto;
@@ -34,10 +38,12 @@
   padding: 0;
 }
 .chew-card {
+  /* Flex implementation */
+  flex: 1;
   /* Centered card */
   display: block;
-  box-sizing: border-box;
-  height: 100%;
   margin: 0 auto;
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px;
   max-width: 300px;
 }

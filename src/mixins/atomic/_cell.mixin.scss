@@ -2,6 +2,9 @@
 {
   /* Flex implementation */
   flex: 1;
+  
+  /* Make the card full height */ 
+  display: flex;
 
   /* Float fallback */
   float: left;

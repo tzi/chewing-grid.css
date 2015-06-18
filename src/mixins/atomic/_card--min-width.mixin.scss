@@ -1,0 +1,5 @@
+@mixin chewing-grid__card--min-width($card-min-width: 200px)
+{
+  min-width: $card-min-width;
+}
+
