@@ -27,6 +27,8 @@
   flex-basis: auto;
   /* Float fallback */
   width: auto;
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px;
 }
 .chew-cell.chew-cell--ghost {
   /* Could be use to create ghost cells 
@@ -43,9 +45,7 @@
   /* Centered card */
   display: block;
   margin: 0 auto;
-  /* Trigger item wrapping with flexbox & float */
-  min-width: 200px;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 /* Atomic column modifiers */
@@ -146,64 +146,64 @@
 }
 
 /* Min-width modifiers */
-.chew-row--card-min-50 > .chew-card {
+.chew-row--card-min-50 > .chew-cell {
   min-width: 50px;
 }
-.chew-row--card-min-100 > .chew-card {
+.chew-row--card-min-100 > .chew-cell {
   min-width: 100px;
 }
-.chew-row--card-min-150 > .chew-card {
+.chew-row--card-min-150 > .chew-cell {
   min-width: 150px;
 }
-.chew-row--card-min-200 > .chew-card {
+.chew-row--card-min-200 > .chew-cell {
   min-width: 200px;
 }
-.chew-row--card-min-250 > .chew-card {
+.chew-row--card-min-250 > .chew-cell {
   min-width: 250px;
 }
-.chew-row--card-min-300 > .chew-card {
+.chew-row--card-min-300 > .chew-cell {
   min-width: 300px;
 }
-.chew-row--card-min-350 > .chew-card {
+.chew-row--card-min-350 > .chew-cell {
   min-width: 350px;
 }
-.chew-row--card-min-400 > .chew-card {
+.chew-row--card-min-400 > .chew-cell {
   min-width: 400px;
 }
-.chew-row--card-min-450 > .chew-card {
+.chew-row--card-min-450 > .chew-cell {
   min-width: 450px;
 }
-.chew-row--card-min-500 > .chew-card {
+.chew-row--card-min-500 > .chew-cell {
   min-width: 500px;
 }
-.chew-row--card-min-550 > .chew-card {
+.chew-row--card-min-550 > .chew-cell {
   min-width: 550px;
 }
-.chew-row--card-min-600 > .chew-card {
+.chew-row--card-min-600 > .chew-cell {
   min-width: 600px;
 }
-.chew-row--card-min-650 > .chew-card {
+.chew-row--card-min-650 > .chew-cell {
   min-width: 650px;
 }
-.chew-row--card-min-700 > .chew-card {
+.chew-row--card-min-700 > .chew-cell {
   min-width: 700px;
 }
-.chew-row--card-min-750 > .chew-card {
+.chew-row--card-min-750 > .chew-cell {
   min-width: 750px;
 }
-.chew-row--card-min-800 > .chew-card {
+.chew-row--card-min-800 > .chew-cell {
   min-width: 800px;
 }
-.chew-row--card-min-850 > .chew-card {
+.chew-row--card-min-850 > .chew-cell {
   min-width: 850px;
 }
-.chew-row--card-min-900 > .chew-card {
+.chew-row--card-min-900 > .chew-cell {
   min-width: 900px;
 }
-.chew-row--card-min-950 > .chew-card {
+.chew-row--card-min-950 > .chew-cell {
   min-width: 950px;
 }
-.chew-row--card-min-1000 > .chew-card {
+.chew-row--card-min-1000 > .chew-cell {
   min-width: 1000px;
 }
 

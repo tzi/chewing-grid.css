@@ -169,10 +169,10 @@ Change the cell `flex-basis` and the `width` to set a column limit:
 
 ### 3.D. Set a minimum card width
 
-Change the card `min-width` to set a card width constraint:
+Change the *cell* `min-width` to set a card width constraint (including gutter):
 
 ```css
-.myCardLit .chew-card {
+.myCardLit .chew-cell {
     min-width: 300px
 }
 ```
@@ -180,7 +180,7 @@ Change the card `min-width` to set a card width constraint:
 
 ### 3.E. Set a maximum card width
 
-Change the card `max-width` to set a card width constraint:
+Change the *card* `max-width` to set a card width constraint:
 
 ```css
 .myCardLit .chew-card {
@@ -193,6 +193,7 @@ Change the card `max-width` to set a card width constraint:
 -------
 
 *Sass documentation is comming...*
+
 
 
 5. Prevent last row expansion
