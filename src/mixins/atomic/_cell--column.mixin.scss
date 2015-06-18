@@ -1,4 +1,4 @@
-@mixin chew-cell--column($column-max-count: auto)
+@mixin chewing-grid__cell--column($column-max-count: auto)
 {
   $width: $column-max-count;
   @if ($column-max-count != auto) {

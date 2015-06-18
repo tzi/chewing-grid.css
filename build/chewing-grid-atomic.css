@@ -14,27 +14,23 @@
   flex: 1;
   /* Float fallback */
   float: left;
+  /* Allow to add gutter via padding without extending the box */
+  box-sizing: border-box;
   /* Trigger item wrapping with flexbox & float */
   min-width: 200px;
-  /* Allow to add gutter */
-  box-sizing: border-box;
   padding: 0;
   /* Flex implementation */
   flex-basis: auto;
   /* Float fallback */
   width: auto;
 }
-.chew-cell--ghost {
+.chew-cell.chew-cell--ghost {
   /* Could be use to create ghost cells 
      And prevent your last item to expand
      And cover entirely the last row
   */
   visibility: hidden;
   height: 0;
-  padding: 0;
-}
-.chew-cell.chew-cell--ghost {
-  /* Reset the cell gutter */
   padding: 0;
 }
 .chew-card {
@@ -47,93 +43,242 @@
 }
 
 /* Atomic column modifiers */
-.chew-row--auto > .chew-cell {
+.chew-row--col-auto > .chew-cell {
   /* Flex implementation */
   flex-basis: auto;
   /* Float fallback */
   width: auto;
 }
-.chew-row--1 > .chew-cell {
+.chew-row--col-1 > .chew-cell {
   /* Max 1 columns */
   /* Flex implementation */
   flex-basis: 100%;
   /* Float fallback */
   width: 100%;
 }
-.chew-row--2 > .chew-cell {
+.chew-row--col-2 > .chew-cell {
   /* Max 2 columns */
   /* Flex implementation */
   flex-basis: 50%;
   /* Float fallback */
   width: 50%;
 }
-.chew-row--3 > .chew-cell {
+.chew-row--col-3 > .chew-cell {
   /* Max 3 columns */
   /* Flex implementation */
   flex-basis: 33.33333%;
   /* Float fallback */
   width: 33.33333%;
 }
-.chew-row--4 > .chew-cell {
+.chew-row--col-4 > .chew-cell {
   /* Max 4 columns */
   /* Flex implementation */
   flex-basis: 25%;
   /* Float fallback */
   width: 25%;
 }
-.chew-row--5 > .chew-cell {
+.chew-row--col-5 > .chew-cell {
   /* Max 5 columns */
   /* Flex implementation */
   flex-basis: 20%;
   /* Float fallback */
   width: 20%;
 }
-.chew-row--6 > .chew-cell {
+.chew-row--col-6 > .chew-cell {
   /* Max 6 columns */
   /* Flex implementation */
   flex-basis: 16.66667%;
   /* Float fallback */
   width: 16.66667%;
 }
-.chew-row--7 > .chew-cell {
+.chew-row--col-7 > .chew-cell {
   /* Max 7 columns */
   /* Flex implementation */
   flex-basis: 14.28571%;
   /* Float fallback */
   width: 14.28571%;
 }
-.chew-row--8 > .chew-cell {
+.chew-row--col-8 > .chew-cell {
   /* Max 8 columns */
   /* Flex implementation */
   flex-basis: 12.5%;
   /* Float fallback */
   width: 12.5%;
 }
-.chew-row--9 > .chew-cell {
+.chew-row--col-9 > .chew-cell {
   /* Max 9 columns */
   /* Flex implementation */
   flex-basis: 11.11111%;
   /* Float fallback */
   width: 11.11111%;
 }
-.chew-row--10 > .chew-cell {
+.chew-row--col-10 > .chew-cell {
   /* Max 10 columns */
   /* Flex implementation */
   flex-basis: 10%;
   /* Float fallback */
   width: 10%;
 }
-.chew-row--11 > .chew-cell {
+.chew-row--col-11 > .chew-cell {
   /* Max 11 columns */
   /* Flex implementation */
   flex-basis: 9.09091%;
   /* Float fallback */
   width: 9.09091%;
 }
-.chew-row--12 > .chew-cell {
+.chew-row--col-12 > .chew-cell {
   /* Max 12 columns */
   /* Flex implementation */
   flex-basis: 8.33333%;
   /* Float fallback */
   width: 8.33333%;
+}
+
+/* Gutter modifiers */
+.chew-row--gutter > .chew-cell {
+  padding: 0.5em;
+}
+
+/* Min-width modifiers */
+.chew-row--cell-min-50 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 50px;
+}
+.chew-row--cell-min-100 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 100px;
+}
+.chew-row--cell-min-150 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 150px;
+}
+.chew-row--cell-min-200 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px;
+}
+.chew-row--cell-min-250 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 250px;
+}
+.chew-row--cell-min-300 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 300px;
+}
+.chew-row--cell-min-350 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 350px;
+}
+.chew-row--cell-min-400 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 400px;
+}
+.chew-row--cell-min-450 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 450px;
+}
+.chew-row--cell-min-500 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 500px;
+}
+.chew-row--cell-min-550 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 550px;
+}
+.chew-row--cell-min-600 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 600px;
+}
+.chew-row--cell-min-650 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 650px;
+}
+.chew-row--cell-min-700 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 700px;
+}
+.chew-row--cell-min-750 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 750px;
+}
+.chew-row--cell-min-800 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 800px;
+}
+.chew-row--cell-min-850 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 850px;
+}
+.chew-row--cell-min-900 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 900px;
+}
+.chew-row--cell-min-950 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 950px;
+}
+.chew-row--cell-min-1000 > .chew-cell {
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 1000px;
+}
+
+/* Max-width modifiers */
+.chew-row--cell-max-50 > .chew-card {
+  max-width: 50px;
+}
+.chew-row--cell-max-100 > .chew-card {
+  max-width: 100px;
+}
+.chew-row--cell-max-150 > .chew-card {
+  max-width: 150px;
+}
+.chew-row--cell-max-200 > .chew-card {
+  max-width: 200px;
+}
+.chew-row--cell-max-250 > .chew-card {
+  max-width: 250px;
+}
+.chew-row--cell-max-300 > .chew-card {
+  max-width: 300px;
+}
+.chew-row--cell-max-350 > .chew-card {
+  max-width: 350px;
+}
+.chew-row--cell-max-400 > .chew-card {
+  max-width: 400px;
+}
+.chew-row--cell-max-450 > .chew-card {
+  max-width: 450px;
+}
+.chew-row--cell-max-500 > .chew-card {
+  max-width: 500px;
+}
+.chew-row--cell-max-550 > .chew-card {
+  max-width: 550px;
+}
+.chew-row--cell-max-600 > .chew-card {
+  max-width: 600px;
+}
+.chew-row--cell-max-650 > .chew-card {
+  max-width: 650px;
+}
+.chew-row--cell-max-700 > .chew-card {
+  max-width: 700px;
+}
+.chew-row--cell-max-750 > .chew-card {
+  max-width: 750px;
+}
+.chew-row--cell-max-800 > .chew-card {
+  max-width: 800px;
+}
+.chew-row--cell-max-850 > .chew-card {
+  max-width: 850px;
+}
+.chew-row--cell-max-900 > .chew-card {
+  max-width: 900px;
+}
+.chew-row--cell-max-950 > .chew-card {
+  max-width: 950px;
+}
+.chew-row--cell-max-1000 > .chew-card {
+  max-width: 1000px;
 }

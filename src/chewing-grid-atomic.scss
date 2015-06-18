@@ -1,17 +1,41 @@
-$chewing-prefix: 'chew-';
-
-@import 'chewing-grid.mixin';
-@include chew-grid($prefix: $chewing-prefix);
+@import 'chewing-grid';
 
 /* Atomic column modifiers */
 .#{$chewing-prefix} {
-    &row--auto > &cell {
-        @include chew-cell--column();
+    &row--col-auto > &cell {
+        @include chewing-grid__cell--column();
     }
 
     @for $counter from 1 through 12 {
-        &row--#{$counter} > &cell {
-            @include chew-cell--column($counter);
+        &row--col-#{$counter} > &cell {
+            @include chewing-grid__cell--column($counter);
+        }
+    }
+}
+
+/* Gutter modifiers */
+.#{$chewing-prefix} {
+    &row--gutter > &cell {
+        @include chewing-grid__cell--gutter(1em);
+    }
+}
+
+/* Min-width modifiers */
+.#{$chewing-prefix} {
+    @for $counter from 1 through 20 {
+        $min: $counter * 50;
+        &row--cell-min-#{$min} > &cell {
+            @include chewing-grid__cell--min-width($min * 1px);
+        }
+    }
+}
+
+/* Max-width modifiers */
+.#{$chewing-prefix} {
+    @for $counter from 1 through 20 {
+        $max: $counter * 50;
+        &row--cell-max-#{$max} > &card {
+            @include chewing-grid__card--max-width($max * 1px);
         }
     }
 }

@@ -1,0 +1,12 @@
+@mixin chewing-grid__cell()
+{
+  /* Flex implementation */
+  flex: 1;
+
+  /* Float fallback */
+  float: left;
+
+  /* Allow to add gutter via padding without extending the box */
+  box-sizing: border-box;
+}
+

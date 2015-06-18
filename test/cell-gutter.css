@@ -1,0 +1,38 @@
+.chew-row {
+  /* Flex implementation */
+  display: flex;
+  flex-wrap: wrap; }
+  .chew-row:after {
+    /* Clearfix */
+    content: "";
+    display: table;
+    clear: both; }
+.chew-cell {
+  /* Flex implementation */
+  flex: 1;
+  /* Float fallback */
+  float: left;
+  /* Allow to add gutter via padding without extending the box */
+  box-sizing: border-box;
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px;
+  padding: 1em;
+  /* Flex implementation */
+  flex-basis: auto;
+  /* Float fallback */
+  width: auto; }
+.chew-cell.chew-cell--ghost {
+  /* Could be use to create ghost cells 
+     And prevent your last item to expand
+     And cover entirely the last row
+  */
+  visibility: hidden;
+  height: 0;
+  padding: 0; }
+.chew-card {
+  /* Centered card */
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 300px; }
