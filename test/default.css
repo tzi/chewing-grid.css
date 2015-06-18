@@ -24,7 +24,9 @@
   /* Flex implementation */
   flex-basis: auto;
   /* Float fallback */
-  width: auto; }
+  width: auto;
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px; }
 .chew-cell.chew-cell--ghost {
   /* Could be use to create ghost cells 
      And prevent your last item to expand
@@ -39,6 +41,4 @@
   /* Centered card */
   display: block;
   margin: 0 auto;
-  /* Trigger item wrapping with flexbox & float */
-  min-width: 200px;
-  max-width: 300px; }
+  max-width: 200px; }
