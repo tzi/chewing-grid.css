@@ -51,20 +51,23 @@ style[contenteditable]:focus {
     height: 70px;
     background: #f0f0f0;
     padding: 2px;
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
     border-radius: 50%;
 }
-.character__name {
+.character__id {
     display: inline-block;
     vertical-align: middle;
     padding: 0 0.2em;
     line-height: 1.2;
+}
+.character__name {
     color: #333;
-    font-family: serif;
+    font-family: 'MedievalSharp', cursive;
     font-weight: bold;
     text-decoration: none;
 }
 .character__house {
+    color: #aaa;
     display: block;
     font-size: 60%;
     font-weight: normal;
@@ -83,6 +86,18 @@ style[contenteditable]:focus {
 }
 .character__infos > li + li {
     border-top: 1px solid #ccc;
+}
+.lannister .character__house {
+    color: #C8A700;
+}
+.lannister .character__avatar > img {
+    background: #FFD600;
+}
+.targaryen .character__house {
+    color: #D1371B;
+}
+.targaryen .character__avatar > img {
+    background: #D1371B;
 }
 
 /* GITHUB RIBBON */
