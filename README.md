@@ -16,18 +16,18 @@ Index
 1. [Installation](#1-installation)
 
 2. [Atomic classes] (#2-atomic-classes)  
-    2.A [Quick start] (#2-a-quick-start) 
-    2.B [Add a gutter](#2-b-add-a-gutter)
-    2.C [Limit the column number](#2-c-limit-the-column-number)
-    2.D [Set a minimum card width](#2-d-set-a-minimum-card-width)
-    2.E [Set a maximum card width](#2-e-set-a-maximum-card-width)
+    2.A [Quick start] (#2a-quick-start) 
+    2.B [Add a gutter](#2b-add-a-gutter)
+    2.C [Limit the column number](#2c-limit-the-column-number)
+    2.D [Set a minimum card width](#2d-set-a-minimum-card-width)
+    2.E [Set a maximum card width](#2e-set-a-maximum-card-width)
     
 3. [CSS Rules] (#3-css-rules)  
-    3.A [Quick start] (#3-a-quick-start) 
-    3.B [Add a gutter](#3-b-add-a-gutter)
-    3.C [Limit the column number](#3-c-limit-the-column-number)
-    3.D [Set a minimum card width](#3-d-set-a-minimum-card-width)
-    3.E [Set a maximum card width](#3-e-set-a-maximum-card-width)
+    3.A [Quick start] (#3a-quick-start) 
+    3.B [Add a gutter](#3b-add-a-gutter)
+    3.C [Limit the column number](#3c-limit-the-column-number)
+    3.D [Set a minimum card width](#3d-set-a-minimum-card-width)
+    3.E [Set a maximum card width](#3e-set-a-maximum-card-width)
     
 4. [Sass] (#4-sass)  
     
