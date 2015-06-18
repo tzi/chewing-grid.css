@@ -66,7 +66,7 @@ Let sart with the minimum markup:
     <li class="chew-cell">
         <div class="chew-card">3</div>
     </li>
-    <!-- [...] !>
+    <!-- [...] -->
 </ul>
 ```
 
@@ -78,7 +78,7 @@ Add a `chew-row--gutter` markup, to add a gutter between cards:
 ```html
 <!-- Ex: Add a 1em gutter -->
 <ul class="chew-row chew-row--gutter">
-    <!-- [...] !>
+    <!-- [...] -->
 </ul>
 ```
 
@@ -90,7 +90,7 @@ Add a `chew-row--col-{n}` markup, to set a  column limit:
 ```html
 <!-- Ex: 4 columns maximum -->
 <ul class="chew-row chew-row--col-4">
-    <!-- [...] !>
+    <!-- [...] -->
 </ul>
 ```
 
@@ -102,7 +102,7 @@ Add a `chew-row--card-min-{width}` markup, to set a minimum card width:
 ```html
 <!-- Ex: card width of 300px minimum -->
 <ul class="chew-row chew-row--card-min-300">
-    <!-- [...] !>
+    <!-- [...] -->
 </ul>
 ```
 
@@ -114,7 +114,7 @@ Add a `chew-row--card-max-{width}` markup, to set a maximum card width:
 ```html
 <!-- Ex: card width of 500px maximum -->
 <ul class="chew-row chew-row--card-min-500">
-    <!-- [...] !>
+    <!-- [...] -->
 </ul>
 ```
 
@@ -139,7 +139,7 @@ Let sart with the minimum markup:
     <li class="chew-cell">
         <div class="chew-card">3</div>
     </li>
-    <!-- [...] !>
+    <!-- [...] -->
 </ul>
 ```
 
@@ -212,7 +212,7 @@ Add some `chew-cell--ghost` markup.
     <li class="chew-cell">
         <div class="chew-card">3</div>
     </li>
-    <!-- [...] !>
+    <!-- [...] -->
     <li class="chew-cell chew-cell--ghost"></li>
     <li class="chew-cell chew-cell--ghost"></li>
 </ul>
