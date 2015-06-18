@@ -148,7 +148,7 @@ Let sart with the minimum markup:
 
 Change the cell `padding`, to add a gutter between cards: 
 
-```html
+```css
 .myCardLit .chew-cell {
     padding: 0.5em; /* vertical & horizontal gutter of 1em (= 2 * 0.5em) */
 }
