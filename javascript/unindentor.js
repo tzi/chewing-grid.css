@@ -6,7 +6,7 @@
     }
 }(this, function () {
     'use strict';
-
+    
     function unindentElementList(elementList) {
         elementList = formatElementList(elementList);
         for (var i = 0; i < elementList.length; i++) {
@@ -45,7 +45,7 @@
     }
 
     function unindentLine(line, indentation) {
-        if (line.startsWith(indentation)) {
+        if (startsWith(line, indentation)) {
             line = line.substr(indentation.length);
         }
         return line;

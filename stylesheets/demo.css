@@ -9,7 +9,11 @@ body {
     box-sizing: border-box;
 }
 
-/* DEMO PAGE */
+/* DEMO GRIDS */
+.chew-row.resizable {
+    background: aliceblue;
+}
+
 style[contenteditable] {
     font-family: monospace;
     white-space: pre-wrap;
@@ -21,11 +25,71 @@ style[contenteditable] {
 }
 style[contenteditable]:focus {
     border-color: tomato;
+
 }
-.demo {
-    background: lightblue;
-    text-align: center;
+
+.character {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #aaa;
+    text-decoration: none;
 }
+.character__header {
+    padding: 0.5em;
+    background: white;
+}
+.character__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.2em;
+}
+.character__avatar > img {
+    height: 70px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.character__name {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.2em;
+    line-height: 1.2;
+    color: #333;
+    font-family: serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.character__house {
+    display: block;
+    font-size: 60%;
+    font-weight: normal;
+    font-style: italic;
+}
+.character__infos {
+    padding: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    color: #777;
+    font-size: 60%;
+    list-style: none;
+}
+.character__infos > li {
+    padding: 0.5em;
+}
+.character__infos > li + li {
+    border-top: 1px solid #ccc;
+}
+
+/* GITHUB RIBBON */
+.gh-ribbon {
+    position: absolute;
+    top: 0; right: 0; border: 0;
+}
+
+/* UTILS */
 .rythm {
     margin-top: 0.5em;
 }
@@ -33,13 +97,4 @@ style[contenteditable]:focus {
     text-align: right;
     font-style: italic;
     color: dimgrey;
-}
-.chew-row.resizable {
-    background: aliceblue;
-}
-
-/* GITHUB RIBBON */
-.gh-ribbon {
-    position: absolute;
-    top: 0; right: 0; border: 0;
 }
