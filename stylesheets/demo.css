@@ -47,7 +47,9 @@ style[contenteditable]:focus {
     padding: 0 0.2em;
 }
 .character__avatar > img {
+    width: 70px;
     height: 70px;
+    background: #f0f0f0;
     padding: 2px;
     border: 1px solid #ccc;
     border-radius: 50%;
