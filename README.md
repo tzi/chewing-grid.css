@@ -20,7 +20,8 @@ Index
     2.B [Add a gutter](#2b-add-a-gutter)  
     2.C [Limit the column number](#2c-limit-the-column-number)  
     2.D [Set a minimum card width](#2d-set-a-minimum-card-width)  
-    2.E [Set a maximum card width](#2e-set-a-maximum-card-width)
+    2.E [Set a maximum card width](#2e-set-a-maximum-card-width)  
+    2.F [Prevent last row expansion](#2f-prevent-last-row-expansion)
     
 3. [CSS Rules] (#3-css-rules)  
     3.A [Quick start] (#3a-quick-start)  
@@ -28,12 +29,12 @@ Index
     3.C [Limit the column number](#3c-limit-the-column-number)  
     3.D [Set a minimum card width](#3d-set-a-minimum-card-width)  
     3.E [Set a maximum card width](#3e-set-a-maximum-card-width)  
+    3.F [Prevent last row expansion](#3f-prevent-last-row-expansion)
     
 4. [Sass] (#4-sass)  
-    
-5. [Prevent last row expansion](#5-prevent-last-row-expansion)
-6. [How to Contribute] (#how-to-contribute)
-7. [Author & Community] (#author--community)
+
+5. [How to Contribute] (#how-to-contribute)
+6. [Author & Community] (#author--community)
 
 
 1. Installation
@@ -119,6 +120,31 @@ Add a `chew-row--card-max-{width}` markup, to set a maximum card width:
 ```
 
 
+### 2.F. Prevent last row expansion
+-------
+
+Add some `chew-cell--ghost` markup.
+
+```html
+<ul class="chew-row chew-row--col-3">
+    <li class="chew-cell">
+        <div class="chew-card">1</div>
+    </li>
+    <li class="chew-cell">
+        <div class="chew-card">2</div>
+    </li>
+    <li class="chew-cell">
+        <div class="chew-card">3</div>
+    </li>
+    <!-- [...] -->
+    <li class="chew-cell chew-cell--ghost"></li>
+    <li class="chew-cell chew-cell--ghost"></li>
+</ul>
+```
+
+You have to add at least `column-max-count - 1` items.
+
+
 3. CSS Rules
 -------
 
@@ -189,14 +215,7 @@ Change the *card* `max-width` to set a card width constraint:
 ```
 
 
-4. Sass
--------
-
-*Sass documentation is comming...*
-
-
-
-5. Prevent last row expansion
+### 3.F. Prevent last row expansion
 -------
 
 Add some `chew-cell--ghost` markup.
@@ -219,6 +238,16 @@ Add some `chew-cell--ghost` markup.
 ```
 
 You have to add at least `column-max-count - 1` items.
+
+
+4. Sass
+-------
+
+*Sass documentation is comming...*
+
+
+
+
 
 
 How to Contribute
