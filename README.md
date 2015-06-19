@@ -32,6 +32,8 @@ Index
     3.F [Prevent last row expansion](#3f-prevent-last-row-expansion)
     
 4. [Sass] (#4-sass)  
+    4.A [Quick start] (#4a-quick-start)  
+    4.B [Prevent last row expansion](#4b-prevent-last-row-expansion)
 
 5. [How to Contribute] (#how-to-contribute)
 6. [Author & Community] (#author--community)
@@ -243,10 +245,60 @@ You have to add at least `column-max-count - 1` items.
 4. Sass
 -------
 
-*Sass documentation is comming...*
+Let sart with the our custom markup: 
+
+```html
+<ul class="character-row">
+    <li class="character-cell">
+        <div class="character-card">1</div>
+    </li>
+    <li class="character-cell">
+        <div class="character-card">2</div>
+    </li>
+    <li class="character-cell">
+        <div class="character-card">3</div>
+    </li>
+    <!-- [...] -->
+</ul>
+```
+
+Generate our associated custom classes:
+
+```scss
+@import 'src/mixins/grid.mixin';
+@include chewing-grid(
+    $prefix: 'character-',
+    $column-max-count: 4,
+    $card-gutter: 1em,
+    $card-min-width: 200px,
+    $card-max-width: 300px
+);
+```
 
 
+### 4.B. Prevent last row expansion
+-------
 
+Add some `chew-cell--ghost` markup.
+
+```html
+<ul class="chew-row chew-row--col-3">
+    <li class="chew-cell">
+        <div class="chew-card">1</div>
+    </li>
+    <li class="chew-cell">
+        <div class="chew-card">2</div>
+    </li>
+    <li class="chew-cell">
+        <div class="chew-card">3</div>
+    </li>
+    <!-- [...] -->
+    <li class="chew-cell chew-cell--ghost"></li>
+    <li class="chew-cell chew-cell--ghost"></li>
+</ul>
+```
+
+You have to add at least `column-max-count - 1` items.
 
 
 
