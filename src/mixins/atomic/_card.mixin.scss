@@ -1,7 +1,8 @@
 @mixin chewing-grid__card()
 {
   /* Flex implementation */
-  flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   
   /* Centered card */
   display: block;

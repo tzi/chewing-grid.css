@@ -1,9 +1,11 @@
 @mixin chewing-grid__cell()
 {
   /* Flex implementation */
-  flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
   
-  /* Make the card full height */ 
+  /* Make the card full height */
+  display: -ms-flex;
   display: flex;
 
   /* Float fallback */

@@ -6,10 +6,8 @@
     $width: 100% / $column-max-count;
   }
 
-  /* Flex implementation */
-  flex-basis: $width;
-
-  /* Float fallback */
+  /* Flex & float implementation */
+  /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: $width;
 }
 

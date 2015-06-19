@@ -18,6 +18,10 @@
     &row--gutter > &cell {
         @include chewing-grid__cell--gutter(1em);
     }
+    
+    &row--no-gutter > &cell {
+        @include chewing-grid__cell--gutter(0);
+    }
 }
 
 /* Min-width modifiers */

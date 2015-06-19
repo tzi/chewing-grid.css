@@ -1,6 +1,7 @@
 @mixin chewing-grid__row()
 {
   /* Flex implementation */
+  display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
   
