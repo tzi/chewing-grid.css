@@ -35,8 +35,9 @@ Index
     4.A [Quick start] (#4a-quick-start)  
     4.B [Prevent last row expansion](#4b-prevent-last-row-expansion)
 
-5. [How to Contribute] (#how-to-contribute)
-6. [Author & Community] (#author--community)
+5. [Browser Compatibility] (#browser-comptability)
+6. [How to Contribute] (#how-to-contribute)
+7. [Author & Community] (#author--community)
 
 
 1. Installation
@@ -51,7 +52,6 @@ bower install chewing-grid --save
 
 2. Atomic classes
 -------
-
 
 ### 2.A. Quick start
 
@@ -150,7 +150,6 @@ You have to add at least `column-max-count - 1` items.
 3. CSS Rules
 -------
 
-
 ### 3.A. Quick start
 
 Let sart with the minimum markup: 
@@ -245,6 +244,8 @@ You have to add at least `column-max-count - 1` items.
 4. Sass
 -------
 
+### 4.A. Quick start
+
 Let sart with the our custom markup: 
 
 ```html
@@ -299,6 +300,26 @@ Add some `chew-cell--ghost` markup.
 ```
 
 You have to add at least `column-max-count - 1` items.
+
+
+Browser compatibility
+--------
+
+ChewingGrid have some workarounds to improve compatibility:
+ 
+ * *no `-webkit-` prefix:* 
+ Safari does not handle `flex-wrap` property when a flex item has a `min-width` and a percent `flex-basis`.
+ cf. [bug tracking](https://bugs.webkit.org/show_bug.cgi?id=136041)    
+ * no use of `calc()`:
+ IE 10-11 ignore `calc()` functions used in `flex` shorthand declarations.
+ cf. [bug documentation](https://github.com/philipwalton/flexbugs#8-flex-basis-doesnt-support-calc)
+ * no use of `flex-basis`:
+ IE 10-11 ignore `box-sizing: border-box` when size set with `flex-basis` .
+ cf. [bug documentation](https://github.com/philipwalton/flexbugs#7-flex-basis-doesnt-account-for-box-sizingborder-box)
+ * no `height: 100%` on card:
+ Chrome doesn't support percent height on felx items childs.
+ cf. [bug tracking](http://code.google.com/p/chromium/issues/detail?id=346275)    
+ * We use `float` element as flexbox fallback. 
 
 
 
