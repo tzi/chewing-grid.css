@@ -307,19 +307,19 @@ Browser compatibility
 
 ChewingGrid have some workarounds to improve compatibility:
  
- * **no `-webkit-` prefix:** 
- Safari does not handle `flex-wrap` property when a flex item has a `min-width` and a percent `flex-basis`.
- cf. [bug tracking](https://bugs.webkit.org/show_bug.cgi?id=136041)    
- * **no use of `calc()`:**
- IE 10-11 ignore `calc()` functions used in `flex` shorthand declarations.
- cf. [bug documentation](https://github.com/philipwalton/flexbugs#8-flex-basis-doesnt-support-calc)
- * **no use of `flex-basis`:**
- IE 10-11 ignore `box-sizing: border-box` when size set with `flex-basis` .
+ * **no `-webkit-` prefix:**  
+ Safari does not handle `flex-wrap` property when a flex item has a `min-width` and a percent `flex-basis`.  
+ cf. [bug tracking](https://bugs.webkit.org/show_bug.cgi?id=136041)
+ * **no use of `calc()`:**  
+ IE 10-11 ignore `calc()` functions used in `flex` shorthand declarations.  
+ cf. [bug documentation](https://github.com/philipwalton/flexbugs#8-flex-basis-doesnt-support-calc)  
+ * **no use of `flex-basis`:**  
+ IE 10-11 ignore `box-sizing: border-box` when size set with `flex-basis`.  
  cf. [bug documentation](https://github.com/philipwalton/flexbugs#7-flex-basis-doesnt-account-for-box-sizingborder-box)
- * **no `height: 100%` on card:**
- Chrome doesn't support percent height on felx items childs.
- cf. [bug tracking](http://code.google.com/p/chromium/issues/detail?id=346275)    
- * **Use `float`:** 
+ * **no `height: 100%` on card:**  
+ Chrome doesn't support percent height on felx items childs.  
+ cf. [bug tracking](http://code.google.com/p/chromium/issues/detail?id=346275)  
+ * **Use `float`:**  
  For brwoser that doest not support flexbox. 
 
 
