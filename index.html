@@ -239,6 +239,22 @@
     <ul class="chew-row chew-row--col-4 chew-row--card-min-200 resizable">
         <li class="chew-cell">
             <style contenteditable class="chew-card">
+                /* Max 4 columns */
+                .chew-cell {
+                    width: 25%;
+                }
+            </style>
+        </li>
+        <li class="chew-cell">
+            <style contenteditable class="chew-card">
+                /* 1em gutter (=2*0.5) */
+                .chew-cell {
+                    padding: 0.5em;
+                }
+            </style>
+        </li>
+        <li class="chew-cell">
+            <style contenteditable class="chew-card">
                 /* Card min-width */
                 .chew-cell {
                     min-width: 200px;
@@ -250,22 +266,6 @@
                 /* Card max-width */
                 .chew-card {
                     max-width: none;
-                }
-            </style>
-        </li>
-        <li class="chew-cell">
-            <style contenteditable class="chew-card">
-                /* Max 4 columns */
-                .chew-cell {
-                    flex-basis: calc(100% / 4);
-                }
-            </style>
-        </li>
-        <li class="chew-cell">
-                <style contenteditable class="chew-card">
-                /* 1em gutter (=2*0.5) */
-                .chew-cell {
-                    padding: 0.5em;
                 }
             </style>
         </li>
