@@ -35,7 +35,7 @@ Index
     4.A [Quick start] (#4a-quick-start)  
     4.B [Prevent last row expansion](#4b-prevent-last-row-expansion)
 
-5. [Browser Compatibility] (#browser-comptability)
+5. [Browser Compatibility] (#browser-compatibility)
 6. [How to Contribute] (#how-to-contribute)
 7. [Author & Community] (#author--community)
 
