@@ -18,11 +18,11 @@
   /* Flex implementation */
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  /* Flex fallback */
+  float: left;
   /* Make the card full height */
   display: -ms-flex;
   display: flex;
-  /* Float fallback */
-  float: left;
   /* Allow to add gutter via padding without extending the box */
   box-sizing: border-box;
   padding: 0;
@@ -160,9 +160,10 @@
   .chew-row--card-min-50 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -174,9 +175,10 @@
   .chew-row--card-min-100 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -188,9 +190,10 @@
   .chew-row--card-min-150 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -202,9 +205,10 @@
   .chew-row--card-min-200 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -216,9 +220,10 @@
   .chew-row--card-min-250 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -230,9 +235,10 @@
   .chew-row--card-min-300 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -244,9 +250,10 @@
   .chew-row--card-min-350 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -258,9 +265,10 @@
   .chew-row--card-min-400 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -272,9 +280,10 @@
   .chew-row--card-min-450 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -286,9 +295,10 @@
   .chew-row--card-min-500 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -300,9 +310,10 @@
   .chew-row--card-min-550 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -314,9 +325,10 @@
   .chew-row--card-min-600 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -328,9 +340,10 @@
   .chew-row--card-min-650 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -342,9 +355,10 @@
   .chew-row--card-min-700 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -356,9 +370,10 @@
   .chew-row--card-min-750 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -370,9 +385,10 @@
   .chew-row--card-min-800 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -384,9 +400,10 @@
   .chew-row--card-min-850 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -398,9 +415,10 @@
   .chew-row--card-min-900 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -412,9 +430,10 @@
   .chew-row--card-min-950 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
@@ -426,9 +445,10 @@
   .chew-row--card-min-1000 > .chew-cell {
     /* When there is no place for 2 columns: Cancel cell layout  */
     /* Flex implementation */
+    display: block;
     width: 100%;
     min-width: 0;
-    /* Float fallback */
+    /* Flex fallback */
     float: none;
   }
 }
