@@ -16,11 +16,11 @@
   /* Flex implementation */
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  /* Flex fallback */
+  float: left;
   /* Make the card full height */
   display: -ms-flex;
   display: flex;
-  /* Float fallback */
-  float: left;
   /* Allow to add gutter via padding without extending the box */
   box-sizing: border-box;
   padding: 1em;

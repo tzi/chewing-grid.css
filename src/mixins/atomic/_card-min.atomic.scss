@@ -11,10 +11,11 @@
       .#{$prefix}row--#{$modifier}#{$name} > .#{$prefix}cell {
         /* When there is no place for 2 columns: Cancel cell layout  */
         /* Flex implementation */
+        display: block;
         width: 100%;
         min-width: 0;
 
-        /* Float fallback */
+        /* Flex fallback */
         float: none;
       }
     }

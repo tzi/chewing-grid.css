@@ -9,8 +9,14 @@
 $chewing-grid__prefix: 'chew-';
 
 // Main mixin
-@mixin chewing-grid($card-min-width: 200px, $card-max-width: 300px, $card-gutter: 0, $column-max-count: auto, $prefix: $chewing-grid__prefix) 
-{
+@mixin chewing-grid(
+    $card-min-width: 200px,
+    $card-max-width: 300px,
+    $card-gutter: 0,
+    $column-max-count: auto,
+    $flex-fallback: left,
+    $prefix: $chewing-grid__prefix
+) {
     .#{$prefix} {
 
         &row {
@@ -18,7 +24,7 @@ $chewing-grid__prefix: 'chew-';
         }
 
         &cell {
-            @include chewing-grid__cell();
+            @include chewing-grid__cell($flex-fallback);
             @include chewing-grid__cell--gutter($card-gutter);
             @include chewing-grid__cell--column($column-max-count);
             /* Trigger item wrapping with flexbox & float */

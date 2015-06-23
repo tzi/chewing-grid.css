@@ -2,12 +2,16 @@
 
 function confirm() {
 	read -p "  - Do you want to ${1} (Y/n)? " -n 1 -r;
+	echo '';
 	ANSWER=false;
+	if [ $REPLY = 'q' ];
+	then
+			exit 1
+	fi
 	if [[ $REPLY =~ ^[Yy]$ ]];
 	then
 			ANSWER=true;
 	fi
-	echo '';
 }
 
 if [ $# -eq 0 ];
@@ -53,7 +57,7 @@ do
   confirm "see the difference?"
   if [ $ANSWER == true ];
   then
-    sass ${SCSS_FILE} | diff --side-by-side - ${CSS_FILE};
+    sass ${SCSS_FILE} | diff --side-by-side ${CSS_FILE} -;
   fi;
   
   confirm "override the current result?"
