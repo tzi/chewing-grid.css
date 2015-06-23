@@ -13,37 +13,43 @@ function confirm() {
 if [ $# -eq 0 ];
 then
   SCSS_FILE_LIST=( $(find ./test -type f | grep ".scss$") );
+  SCSS_FILE_LIST="${SCSS_FILE_LIST[@]}";
 else
   SCSS_FILE_LIST=$@;
 fi;
 
-for SCSS_FILE in "${SCSS_FILE_LIST[@]}";
+for SCSS_FILE in $(echo ${SCSS_FILE_LIST});
 do
-  CSS_FILE=$( echo ${SCSS_FILE%.*}.css);
-  if [ ! -f ${CSS_FILE} ];
+  if [ ! -f ${SCSS_FILE} -o ${SCSS_FILE##*.} != "scss" ];
   then
-    echo "No existing result test for '${SCSS_FILE}'."
-    confirm "generate a new one?"
-    if [ $ANSWER == true ];
+    echo "${SCSS_FILE}: NOT FOUND"
+  else
+    CSS_FILE=$( echo ${SCSS_FILE%.*}.css);
+    if [ ! -f ${CSS_FILE} ];
     then
-      sass ${SCSS_FILE} ${CSS_FILE}
-    fi;
-  fi;
-  DIFF=$( sass ${SCSS_FILE} | diff ${CSS_FILE} - | wc -l);
-  if [ $DIFF -gt 0 ];
-  then
-    echo "${SCSS_FILE}: ERROR"
-    confirm "see the difference?"
-    if [ $ANSWER == true ];
-    then
-      sass ${SCSS_FILE} | diff --side-by-side ${CSS_FILE} -;
-      confirm "override the current result?"
+      echo "No existing result test for '${SCSS_FILE}'."
+      confirm "generate a new one?"
       if [ $ANSWER == true ];
       then
         sass ${SCSS_FILE} ${CSS_FILE}
       fi;
     fi;
-  else
-    echo "${SCSS_FILE}: OK"
+    DIFF=$( sass ${SCSS_FILE} | diff ${CSS_FILE} - | wc -l);
+    if [ $DIFF -gt 0 ];
+    then
+      echo "${SCSS_FILE}: ERROR"
+      confirm "see the difference?"
+      if [ $ANSWER == true ];
+      then
+        sass ${SCSS_FILE} | diff --side-by-side ${CSS_FILE} -;
+        confirm "override the current result?"
+        if [ $ANSWER == true ];
+        then
+          sass ${SCSS_FILE} ${CSS_FILE}
+        fi;
+      fi;
+    else
+      echo "${SCSS_FILE}: OK";
+    fi;
   fi;
 done;
