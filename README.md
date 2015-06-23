@@ -1,4 +1,4 @@
-ChewingGrid
+chewing-grid.css
 ======
 
 An ideal CSS Grid for card design:
@@ -7,7 +7,7 @@ An ideal CSS Grid for card design:
  * Fluid card size thanks to Flexbox (<3), or the float fallback
  * Minimum & maximum width on card
 
-You can play with it: [Live demo](http://tzi.github.io/ChewingGrid)!
+You can play with it: [Live demo](http://tzi.github.io/chewing-grid.css)!
 
  
 Index
@@ -43,7 +43,7 @@ Index
 1. Installation
 -------
 
-Install ChewingGrid via bower and add it to bower.json dependencies
+Install chewing-grid via bower and add it to bower.json dependencies
 
 ```sh
 bower install chewing-grid --save
@@ -305,7 +305,7 @@ You have to add at least `column-max-count - 1` items.
 Browser compatibility
 --------
 
-ChewingGrid have some workarounds to improve compatibility:
+chewing-grid have some workarounds to improve compatibility:
  
  * **no `-webkit-` prefix:**  
  Safari does not handle `flex-wrap` property when a flex item has a `min-width` and a percent `flex-basis`.
@@ -327,14 +327,14 @@ ChewingGrid have some workarounds to improve compatibility:
 How to Contribute
 --------
 
-1. [Star](https://github.com/tzi/ChewingGrid/stargazers) the project!
-2. [Report a bug](https://github.com/tzi/ChewingGrid/issues/new) that you have found.
-3. Tweet and blog about ChewingGrid and [Let me know](https://twitter.com/iamtzi) about it.
-4. [Pull requests](https://github.com/tzi/ChewingGrid/blob/master/CONTRIBUTING.md) are also highly appreciated.
+1. [Star](https://github.com/tzi/chewing-grid.css/stargazers) the project!
+2. [Report a bug](https://github.com/tzi/chewing-grid.css/issues/new) that you have found.
+3. Tweet and blog about chewing-grid and [Let me know](https://twitter.com/iamtzi) about it.
+4. [Pull requests](https://github.com/tzi/chewing-grid/blob/master/CONTRIBUTING.md) are also highly appreciated.
 
 
 Author & Community
 --------
 
-ChewingGrid is under [MIT License](http://opensource.org/licenses/MIT).<br>
+chewing-grid is under [MIT License](http://opensource.org/licenses/MIT).<br>
 It was created & is maintained by [Thomas ZILLIOX](http://tzi.fr).
