@@ -29,7 +29,7 @@
 
         &card {
             @include chewing-grid__card();
-            max-width: $card-min-width;
+            max-width: $card-max-width;
         }
     }
 }

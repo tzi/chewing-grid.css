@@ -31,6 +31,18 @@
         &row--card-min-#{$min} > &cell {
             min-width: $min * 1px;
         }
+        
+        @media (max-width: #{2px * $min - 1}) {
+            &row--card-min-#{$min} > &cell {
+                /* When there is no place for 2 columns: Cancel cell layout  */
+                /* Flex implementation */
+                width: 100%;
+                min-width: 0;
+
+                /* Float fallback */
+                float: none;
+            }
+        }
     }
 }
 
@@ -38,7 +50,7 @@
 .#{$chewing-prefix} {
     @for $counter from 1 through 20 {
         $max: $counter * 50;
-        &row--card-max-#{$max} > &card {
+        &row--card-max-#{$max} > * > &card {
             max-width: $max * 1px;
         }
     }
