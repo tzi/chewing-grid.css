@@ -1,0 +1,47 @@
+.chew-row {
+  /* Flex implementation */
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  /* Unset list styles */
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .chew-row:after {
+    /* Clearfix */
+    content: "";
+    display: table;
+    clear: both; }
+.chew-cell {
+  /* Flex implementation */
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  /* Make the card full height */
+  display: -ms-flex;
+  display: flex;
+  /* Float fallback */
+  float: left;
+  /* Allow to add gutter via padding without extending the box */
+  box-sizing: border-box;
+  padding: 1em;
+  /* Flex & float implementation */
+  /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
+  width: auto;
+  /* Trigger item wrapping with flexbox & float */
+  min-width: 200px; }
+.chew-cell.chew-cell--ghost {
+  /* Could be use to create ghost cells 
+     And prevent your last item to expand
+     And cover entirely the last row
+  */
+  visibility: hidden;
+  height: 0;
+  padding: 0; }
+.chew-card {
+  /* Flex implementation */
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  /* Centered card */
+  display: block;
+  margin: 0 auto;
+  max-width: 300px; }

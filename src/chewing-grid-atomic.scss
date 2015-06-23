@@ -1,57 +1,16 @@
-@import 'chewing-grid';
+@import 'mixins/grid.mixin';
+@import 'mixins/atomic.mixin';
+
+@include chewing-grid();
 
 /* Atomic column modifiers */
-.#{$chewing-prefix} {
-    &row--col-auto > &cell {
-        @include chewing-grid__cell--column();
-    }
-
-    @for $counter from 1 through 12 {
-        &row--col-#{$counter} > &cell {
-            @include chewing-grid__cell--column($counter);
-        }
-    }
-}
+@include chewing-grid__atomic-col();
 
 /* Gutter modifiers */
-.#{$chewing-prefix} {
-    &row--gutter > &cell {
-        @include chewing-grid__cell--gutter(1em);
-    }
-    
-    &row--no-gutter > &cell {
-        @include chewing-grid__cell--gutter(0);
-    }
-}
+@include chewing-grid__atomic-gutter();
 
 /* Min-width modifiers */
-.#{$chewing-prefix} {
-    @for $counter from 1 through 20 {
-        $min: $counter * 50;
-        &row--card-min-#{$min} > &cell {
-            min-width: $min * 1px;
-        }
-        
-        @media (max-width: #{2px * $min - 1}) {
-            &row--card-min-#{$min} > &cell {
-                /* When there is no place for 2 columns: Cancel cell layout  */
-                /* Flex implementation */
-                width: 100%;
-                min-width: 0;
-
-                /* Float fallback */
-                float: none;
-            }
-        }
-    }
-}
+@include chewing-grid__atomic-card-min();
 
 /* Max-width modifiers */
-.#{$chewing-prefix} {
-    @for $counter from 1 through 20 {
-        $max: $counter * 50;
-        &row--card-max-#{$max} > * > &card {
-            max-width: $max * 1px;
-        }
-    }
-}
+@include chewing-grid__atomic-card-max();

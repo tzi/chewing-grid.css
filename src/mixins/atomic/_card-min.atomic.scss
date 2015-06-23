@@ -1,0 +1,22 @@
+@mixin chewing-grid__atomic-card-min(
+  $size-map: generate-size-map(1, 20, 50px),
+  $modifier: 'card-min-', 
+  $prefix: $chewing-grid__prefix
+) {
+  @each $name, $min in $size-map {
+    .#{$prefix}row--#{$modifier}#{$name} > .#{$prefix}cell {
+      min-width: $min;
+    }
+    @media (max-width: #{2 * $min - 1}) {
+      .#{$prefix}row--#{$modifier}#{$name} > .#{$prefix}cell {
+        /* When there is no place for 2 columns: Cancel cell layout  */
+        /* Flex implementation */
+        width: 100%;
+        min-width: 0;
+
+        /* Float fallback */
+        float: none;
+      }
+    }
+  }
+}

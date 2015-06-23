@@ -1,4 +1,2 @@
-$chewing-prefix: 'chew-';
-
 @import 'mixins/grid.mixin';
-@include chewing-grid($prefix: $chewing-prefix);
+@include chewing-grid();

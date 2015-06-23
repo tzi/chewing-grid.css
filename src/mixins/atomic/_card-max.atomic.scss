@@ -1,0 +1,11 @@
+@mixin chewing-grid__atomic-card-max(
+  $size-map: generate-size-map(1, 20, 50px),
+  $modifier: 'card-max-', 
+  $prefix: $chewing-grid__prefix
+) {
+  @each $name, $max in $size-map {
+    .#{$prefix}row--#{$modifier}#{$name} > * > .#{$prefix}card {
+      max-width: $max;
+    }
+  }
+}

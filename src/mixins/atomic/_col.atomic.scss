@@ -1,0 +1,19 @@
+@mixin chewing-grid__atomic-col(
+  $start-size: 1,
+  $end-size: 12,
+  $has-auto: true,
+  $modifier: 'col-', 
+  $prefix: $chewing-grid__prefix
+) {
+  @if ($has-auto) {
+    .#{$prefix}row--#{$modifier}auto > .#{$prefix}cell {
+      @include chewing-grid__cell--column();
+    }
+  }
+
+  @for $counter from $start-size through $end-size {
+    .#{$prefix}row--#{$modifier}#{$counter} > .#{$prefix}cell {
+      @include chewing-grid__cell--column($counter);
+    }
+  }
+}

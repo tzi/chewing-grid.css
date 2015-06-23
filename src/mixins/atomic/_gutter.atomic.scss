@@ -1,0 +1,12 @@
+@mixin chewing-grid__atomic-gutter(
+  $gutter: 1em, 
+  $prefix: $chewing-grid__prefix
+) {
+  .#{$prefix}row--gutter > .#{$prefix}cell {
+    @include chewing-grid__cell--gutter($gutter);
+  }
+
+  .#{$prefix}row--no-gutter > .#{$prefix}cell {
+    @include chewing-grid__cell--gutter(0);
+  }
+}
