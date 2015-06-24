@@ -40,7 +40,7 @@ do
     confirm "generate a new one?"
     if [ $ANSWER == true ];
     then
-      sass ${SCSS_FILE} ${CSS_FILE}
+      sass ${SCSS_FILE} ${CSS_FILE} --style expanded
     fi;
     continue;
   fi;
@@ -63,7 +63,7 @@ do
   confirm "override the current result?"
   if [ $ANSWER == true ];
   then
-    sass ${SCSS_FILE} ${CSS_FILE}
+    sass ${SCSS_FILE} ${CSS_FILE} --style expanded
   fi;
   
 done;

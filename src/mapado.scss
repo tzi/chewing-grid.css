@@ -1,0 +1,25 @@
+@import 'mixins/grid.mixin';
+@import 'mixins/atomic.mixin';
+
+#mapado-plugin {
+  @include chewing-grid(
+    $card-min-width: 600px,
+    $card-max-width: none,
+    $card-gutter: 1em
+  );
+
+  /* Atomic column modifiers */
+  @include chewing-grid__atomic-col(
+    $cell-min-size-map: (
+      'l': 600px,
+      'm': 525px,
+      's': 450px,
+      'top': 250px
+    ),
+    $cell-min-modifier: 'thumb-',
+    $col-start-size: 1,
+    $col-end-size: 4,
+    $col-has-auto: false,
+    $col-modifier: ''
+  );
+}

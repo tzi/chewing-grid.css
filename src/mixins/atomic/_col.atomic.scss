@@ -34,7 +34,7 @@
           $selector: unquote('.#{$prefix}row--#{$col-modifier}#{$col-size}.#{$prefix}row--#{$cell-min-modifier}#{$name} > .#{$prefix}cell');
           $selectorList: append($selectorList, $selector);
         }
-        @if ($screen-size == 1 and $col-has-auto) {
+        @if ($screen-size == 1) {
           $selector: unquote('.#{$prefix}row--#{$cell-min-modifier}#{$name} > .#{$prefix}cell');
           $selectorList: append($selectorList, $selector);
         }
