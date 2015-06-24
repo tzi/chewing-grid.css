@@ -13,68 +13,74 @@
     </style>
 </head>
 <body>
-<h1>chewing-grid.css</h1>
 
-<p>
-    The chewing-grid is an ideal CSS Grid for card listing design.<br>
-    It was made with flexbox & love by <a href="http://tzi.fr">Thomas ZILLIOX</a>.
-
-<p>See a live demo:</p>
+<div class="container">
+    <h1>chewing-grid.css</h1>
+    
+    <p>
+        The chewing-grid is an ideal CSS Grid for card listing design.<br>
+        It was made with flexbox & love by <a href="http://tzi.fr">Thomas ZILLIOX</a>.
+    </p>
+    
+    <h2>See live demo</h2>
+</div>
 
 <div class="rythm resizable">
     <iframe src="demo.html"></iframe>
 </div>
 
-<p>Change the current settings:</p>
+<div class="container">
+    <p class="info">
+        Use the right bars to resize the demonstration.
+    </p>
+    
+    <h2>Change the current settings</h2>
 
-<div class="rythm">
-    <ul class="chew-row chew-row--col-4 chew-row--card-min-200 resizable">
-        <li class="chew-cell">
-            <style contenteditable class="chew-card">
-                /* Max 4 columns */
-                .chew-cell {
-                    width: 25%;
-                }
-            </style>
-        </li>
-        <li class="chew-cell">
-            <style contenteditable class="chew-card">
-                /* 1em gutter (=2*0.5) */
-                .chew-cell {
-                    padding: 0.5em;
-                }
-            </style>
-        </li>
-        <li class="chew-cell">
-            <style contenteditable class="chew-card">
-                /* Card min-width */
-                .chew-cell {
-                    min-width: 200px;
-                }
-            </style>
-        </li>
-        <li class="chew-cell">
-            <style contenteditable class="chew-card">
-                /* Card max-width */
-                .chew-card {
-                    max-width: none;
-                }
-            </style>
-        </li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-        <li class="chew-cell chew-cell--ghost"></li>
-    </ul>
+    <div class="rythm">
+        <ul class="chew-row chew-row--col-4 chew-row--card-min-200">
+            <li class="chew-cell">
+                <style contenteditable class="chew-card">
+                    /* Max 4 columns */
+                    .chew-cell {
+                        width: 25%;
+                    }
+                </style>
+            </li>
+            <li class="chew-cell">
+                <style contenteditable class="chew-card">
+                    /* 1em gutter (=2*0.5) */
+                    .chew-cell {
+                        padding: 0.5em;
+                    }
+                </style>
+            </li>
+            <li class="chew-cell">
+                <style contenteditable class="chew-card">
+                    /* Card min-width */
+                    .chew-cell {
+                        min-width: 200px;
+                    }
+                </style>
+            </li>
+            <li class="chew-cell">
+                <style contenteditable class="chew-card">
+                    /* Card max-width */
+                    .chew-card {
+                        max-width: none;
+                    }
+                </style>
+            </li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+            <li class="chew-cell chew-cell--ghost"></li>
+        </ul>
+    </div>
 </div>
-
-<p class="info">
-    use the right bars to resize the grids ;)
-</p>
 
 <a href="https://github.com/tzi/chewing-grid.css">
     <img class="gh-ribbon" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" />

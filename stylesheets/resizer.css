@@ -1,15 +1,21 @@
 .resizable {
     position: relative;
+    padding-right: 6px;
+    margin-right: 1em;
 }
 .resizable.drag:before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom:0;
 }
+.resizable > iframe {
+    border: 0;
+    display: block;
+    width: 100%;
+}
 .resizable .resizer {
     position:absolute;
-    left: 100%;
-    top: 0; bottom: 0;
+    top: 0; bottom: 0; right: 0;
     width: 6px;
     border: 1px darkgrey solid;
     border-width: 0 1px;
