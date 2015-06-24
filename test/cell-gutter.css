@@ -3,6 +3,15 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
+  /* Inline-block fallback */
+  letter-spacing: -0.31em;
+  /* Collapse white-space */
+  *letter-spacing: normal;
+  /* IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8 */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
   /* Unset list styles */
   list-style: none;
   padding: 0;
@@ -14,8 +23,13 @@
   /* Inline-block fallback */
   display: inline-block;
   vertical-align: top;
-  margin-right: -0.31em;
-  margin-bottom: -0.31em;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  zoom: 1;
+  /* Reset white-space properties */
+  letter-spacing: normal;
+  *word-spacing: normal;
+  /* IE < 8 */
   /* Make the card full height */
   display: -ms-flex;
   display: flex;

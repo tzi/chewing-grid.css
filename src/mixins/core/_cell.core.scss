@@ -7,8 +7,11 @@
   /* Inline-block fallback */
   display: inline-block;
   vertical-align: top;
-  margin-right: -0.31em;
-  margin-bottom: -0.31em;
+  *display: inline; /* IE < 8: fake inline-block */
+  zoom: 1;
+  /* Reset white-space properties */
+  letter-spacing: normal;
+  *word-spacing: normal; /* IE < 8 */
   
   /* Make the card full height */
   display: -ms-flex;

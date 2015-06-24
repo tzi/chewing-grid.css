@@ -4,6 +4,12 @@
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
+
+  /* Inline-block fallback */
+  letter-spacing: -0.31em; /* Collapse white-space */
+  *letter-spacing: normal; /* IE < 8 */
+  *word-spacing: -0.43em; /* IE < 8 */
+  text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
   
   /* Unset list styles */
   list-style: none;

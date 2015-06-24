@@ -5,6 +5,9 @@
   .#{$prefix}row--gutter > .#{$prefix}cell {
     @include chewing-grid__cell--gutter($gutter);
   }
+  .#{$prefix}row--gutter > .#{$prefix}cell--ghost {
+    padding: 0;
+  }
 
   .#{$prefix}row--no-gutter > .#{$prefix}cell {
     @include chewing-grid__cell--gutter(0);
