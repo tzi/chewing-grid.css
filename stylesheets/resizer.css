@@ -9,8 +9,8 @@
     top: 0; left: 0; right: 0; bottom:0;
 }
 .resizable > iframe {
-    border: 0;
     display: block;
+    border: 0 none;
     width: 100%;
 }
 .resizable .resizer {
