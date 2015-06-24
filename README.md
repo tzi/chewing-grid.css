@@ -4,7 +4,7 @@ chewing-grid.css
 An ideal CSS Grid for card design:
 
  * Adapt to any layout, there is no media-query
- * Fluid card size thanks to Flexbox (<3), or the float fallback
+ * Fluid card size thanks to Flexbox (<3), or the `inline-block` fallback
  * Minimum & maximum width on card
 
 You can play with it: [Live demo](http://tzi.github.io/chewing-grid.css)!
@@ -188,8 +188,7 @@ Change the cell `flex-basis` and the `width` to set a column limit:
 
 ```css
 .myCardLit .chew-cell {
-    flex-basis: 25%; /* 4 columns */
-    width: 25%; /* float fallback */
+    width: 25%;
 }
 ```
 
@@ -319,8 +318,8 @@ chewing-grid have some workarounds to improve compatibility:
  * **no `height: 100%` on card:**  
  Chrome doesn't support percent height on felx items childs.
  cf. [bug tracking](http://code.google.com/p/chromium/issues/detail?id=346275).
- * **Use `float`:**  
- For brwoser that doest not support flexbox. 
+ * **Use `display: inline-block` and `media-queries:**  
+ To improve the user experience on browsers that doest not support flexbox. 
 
 
 

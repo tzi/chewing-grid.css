@@ -6,7 +6,7 @@
     $width: 100% / $column-max-count;
   }
 
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: $width;
 }

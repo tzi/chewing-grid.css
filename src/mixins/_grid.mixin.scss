@@ -26,7 +26,7 @@ $chewing-grid__prefix: 'chew-';
             @include chewing-grid__cell();
             @include chewing-grid__cell--gutter($card-gutter);
             @include chewing-grid__cell--column($column-max-count);
-            /* Trigger item wrapping with flexbox & float */
+            /* Trigger item wrapping with flexbox & inline-block */
             min-width: $card-min-width;
         }
         

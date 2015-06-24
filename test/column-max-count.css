@@ -37,10 +37,10 @@
   box-sizing: border-box;
   padding: 0;
   /* Max 3 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 33.33333%;
-  /* Trigger item wrapping with flexbox & float */
+  /* Trigger item wrapping with flexbox & inline-block */
   min-width: 200px; }
 .chew-cell.chew-cell--ghost {
   /* Could be use to create ghost cells 
