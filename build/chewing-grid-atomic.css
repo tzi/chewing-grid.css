@@ -8,18 +8,15 @@
   padding: 0;
   margin: 0;
 }
-.chew-row:after {
-  /* Clearfix */
-  content: "";
-  display: table;
-  clear: both;
-}
 .chew-cell {
   /* Flex implementation */
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
-  /* Flex fallback */
-  float: left;
+  /* Inline-block fallback */
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -0.31em;
+  margin-bottom: -0.31em;
   /* Make the card full height */
   display: -ms-flex;
   display: flex;
@@ -142,6 +139,1686 @@
   width: 8.33333%;
 }
 
+.chew-row--card-min-50 > .chew-cell {
+  min-width: 50px;
+}
+
+@media (max-width: 599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 549px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 449px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 349px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-50 > .chew-cell, .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-50 > .chew-cell, .chew-row--col-7.chew-row--card-min-50 > .chew-cell, .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-50 > .chew-cell, .chew-row--col-6.chew-row--card-min-50 > .chew-cell, .chew-row--col-7.chew-row--card-min-50 > .chew-cell, .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-50 > .chew-cell, .chew-row--col-5.chew-row--card-min-50 > .chew-cell, .chew-row--col-6.chew-row--card-min-50 > .chew-cell, .chew-row--col-7.chew-row--card-min-50 > .chew-cell, .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 149px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-50 > .chew-cell, .chew-row--col-4.chew-row--card-min-50 > .chew-cell, .chew-row--col-5.chew-row--card-min-50 > .chew-cell, .chew-row--col-6.chew-row--card-min-50 > .chew-cell, .chew-row--col-7.chew-row--card-min-50 > .chew-cell, .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 99px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-50 > .chew-cell, .chew-row--col-3.chew-row--card-min-50 > .chew-cell, .chew-row--col-4.chew-row--card-min-50 > .chew-cell, .chew-row--col-5.chew-row--card-min-50 > .chew-cell, .chew-row--col-6.chew-row--card-min-50 > .chew-cell, .chew-row--col-7.chew-row--card-min-50 > .chew-cell, .chew-row--col-8.chew-row--card-min-50 > .chew-cell, .chew-row--col-9.chew-row--card-min-50 > .chew-cell, .chew-row--col-10.chew-row--card-min-50 > .chew-cell, .chew-row--col-11.chew-row--card-min-50 > .chew-cell, .chew-row--col-12.chew-row--card-min-50 > .chew-cell, .chew-row--col-auto.chew-row--card-min-50 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-100 > .chew-cell {
+  min-width: 100px;
+}
+
+@media (max-width: 1199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 1099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-100 > .chew-cell, .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-100 > .chew-cell, .chew-row--col-7.chew-row--card-min-100 > .chew-cell, .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-100 > .chew-cell, .chew-row--col-6.chew-row--card-min-100 > .chew-cell, .chew-row--col-7.chew-row--card-min-100 > .chew-cell, .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-100 > .chew-cell, .chew-row--col-5.chew-row--card-min-100 > .chew-cell, .chew-row--col-6.chew-row--card-min-100 > .chew-cell, .chew-row--col-7.chew-row--card-min-100 > .chew-cell, .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-100 > .chew-cell, .chew-row--col-4.chew-row--card-min-100 > .chew-cell, .chew-row--col-5.chew-row--card-min-100 > .chew-cell, .chew-row--col-6.chew-row--card-min-100 > .chew-cell, .chew-row--col-7.chew-row--card-min-100 > .chew-cell, .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-100 > .chew-cell, .chew-row--col-3.chew-row--card-min-100 > .chew-cell, .chew-row--col-4.chew-row--card-min-100 > .chew-cell, .chew-row--col-5.chew-row--card-min-100 > .chew-cell, .chew-row--col-6.chew-row--card-min-100 > .chew-cell, .chew-row--col-7.chew-row--card-min-100 > .chew-cell, .chew-row--col-8.chew-row--card-min-100 > .chew-cell, .chew-row--col-9.chew-row--card-min-100 > .chew-cell, .chew-row--col-10.chew-row--card-min-100 > .chew-cell, .chew-row--col-11.chew-row--card-min-100 > .chew-cell, .chew-row--col-12.chew-row--card-min-100 > .chew-cell, .chew-row--col-auto.chew-row--card-min-100 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-150 > .chew-cell {
+  min-width: 150px;
+}
+
+@media (max-width: 1799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 1649px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 1499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 1349px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 1049px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-150 > .chew-cell, .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-150 > .chew-cell, .chew-row--col-7.chew-row--card-min-150 > .chew-cell, .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-150 > .chew-cell, .chew-row--col-6.chew-row--card-min-150 > .chew-cell, .chew-row--col-7.chew-row--card-min-150 > .chew-cell, .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-150 > .chew-cell, .chew-row--col-5.chew-row--card-min-150 > .chew-cell, .chew-row--col-6.chew-row--card-min-150 > .chew-cell, .chew-row--col-7.chew-row--card-min-150 > .chew-cell, .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 449px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-150 > .chew-cell, .chew-row--col-4.chew-row--card-min-150 > .chew-cell, .chew-row--col-5.chew-row--card-min-150 > .chew-cell, .chew-row--col-6.chew-row--card-min-150 > .chew-cell, .chew-row--col-7.chew-row--card-min-150 > .chew-cell, .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-150 > .chew-cell, .chew-row--col-3.chew-row--card-min-150 > .chew-cell, .chew-row--col-4.chew-row--card-min-150 > .chew-cell, .chew-row--col-5.chew-row--card-min-150 > .chew-cell, .chew-row--col-6.chew-row--card-min-150 > .chew-cell, .chew-row--col-7.chew-row--card-min-150 > .chew-cell, .chew-row--col-8.chew-row--card-min-150 > .chew-cell, .chew-row--col-9.chew-row--card-min-150 > .chew-cell, .chew-row--col-10.chew-row--card-min-150 > .chew-cell, .chew-row--col-11.chew-row--card-min-150 > .chew-cell, .chew-row--col-12.chew-row--card-min-150 > .chew-cell, .chew-row--col-auto.chew-row--card-min-150 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-200 > .chew-cell {
+  min-width: 200px;
+}
+
+@media (max-width: 2399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 2199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 1999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 1799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 1399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-200 > .chew-cell, .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 1199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-200 > .chew-cell, .chew-row--col-7.chew-row--card-min-200 > .chew-cell, .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-200 > .chew-cell, .chew-row--col-6.chew-row--card-min-200 > .chew-cell, .chew-row--col-7.chew-row--card-min-200 > .chew-cell, .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-200 > .chew-cell, .chew-row--col-5.chew-row--card-min-200 > .chew-cell, .chew-row--col-6.chew-row--card-min-200 > .chew-cell, .chew-row--col-7.chew-row--card-min-200 > .chew-cell, .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-200 > .chew-cell, .chew-row--col-4.chew-row--card-min-200 > .chew-cell, .chew-row--col-5.chew-row--card-min-200 > .chew-cell, .chew-row--col-6.chew-row--card-min-200 > .chew-cell, .chew-row--col-7.chew-row--card-min-200 > .chew-cell, .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-200 > .chew-cell, .chew-row--col-3.chew-row--card-min-200 > .chew-cell, .chew-row--col-4.chew-row--card-min-200 > .chew-cell, .chew-row--col-5.chew-row--card-min-200 > .chew-cell, .chew-row--col-6.chew-row--card-min-200 > .chew-cell, .chew-row--col-7.chew-row--card-min-200 > .chew-cell, .chew-row--col-8.chew-row--card-min-200 > .chew-cell, .chew-row--col-9.chew-row--card-min-200 > .chew-cell, .chew-row--col-10.chew-row--card-min-200 > .chew-cell, .chew-row--col-11.chew-row--card-min-200 > .chew-cell, .chew-row--col-12.chew-row--card-min-200 > .chew-cell, .chew-row--col-auto.chew-row--card-min-200 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-250 > .chew-cell {
+  min-width: 250px;
+}
+
+@media (max-width: 2999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 2749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 2499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 2249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 1999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 1749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-250 > .chew-cell, .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 1499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-250 > .chew-cell, .chew-row--col-7.chew-row--card-min-250 > .chew-cell, .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 1249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-250 > .chew-cell, .chew-row--col-6.chew-row--card-min-250 > .chew-cell, .chew-row--col-7.chew-row--card-min-250 > .chew-cell, .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-250 > .chew-cell, .chew-row--col-5.chew-row--card-min-250 > .chew-cell, .chew-row--col-6.chew-row--card-min-250 > .chew-cell, .chew-row--col-7.chew-row--card-min-250 > .chew-cell, .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-250 > .chew-cell, .chew-row--col-4.chew-row--card-min-250 > .chew-cell, .chew-row--col-5.chew-row--card-min-250 > .chew-cell, .chew-row--col-6.chew-row--card-min-250 > .chew-cell, .chew-row--col-7.chew-row--card-min-250 > .chew-cell, .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-250 > .chew-cell, .chew-row--col-3.chew-row--card-min-250 > .chew-cell, .chew-row--col-4.chew-row--card-min-250 > .chew-cell, .chew-row--col-5.chew-row--card-min-250 > .chew-cell, .chew-row--col-6.chew-row--card-min-250 > .chew-cell, .chew-row--col-7.chew-row--card-min-250 > .chew-cell, .chew-row--col-8.chew-row--card-min-250 > .chew-cell, .chew-row--col-9.chew-row--card-min-250 > .chew-cell, .chew-row--col-10.chew-row--card-min-250 > .chew-cell, .chew-row--col-11.chew-row--card-min-250 > .chew-cell, .chew-row--col-12.chew-row--card-min-250 > .chew-cell, .chew-row--col-auto.chew-row--card-min-250 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-300 > .chew-cell {
+  min-width: 300px;
+}
+
+@media (max-width: 3599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 3299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 2999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 2699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 2399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 2099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-300 > .chew-cell, .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 1799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-300 > .chew-cell, .chew-row--col-7.chew-row--card-min-300 > .chew-cell, .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 1499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-300 > .chew-cell, .chew-row--col-6.chew-row--card-min-300 > .chew-cell, .chew-row--col-7.chew-row--card-min-300 > .chew-cell, .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 1199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-300 > .chew-cell, .chew-row--col-5.chew-row--card-min-300 > .chew-cell, .chew-row--col-6.chew-row--card-min-300 > .chew-cell, .chew-row--col-7.chew-row--card-min-300 > .chew-cell, .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-300 > .chew-cell, .chew-row--col-4.chew-row--card-min-300 > .chew-cell, .chew-row--col-5.chew-row--card-min-300 > .chew-cell, .chew-row--col-6.chew-row--card-min-300 > .chew-cell, .chew-row--col-7.chew-row--card-min-300 > .chew-cell, .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-300 > .chew-cell, .chew-row--col-3.chew-row--card-min-300 > .chew-cell, .chew-row--col-4.chew-row--card-min-300 > .chew-cell, .chew-row--col-5.chew-row--card-min-300 > .chew-cell, .chew-row--col-6.chew-row--card-min-300 > .chew-cell, .chew-row--col-7.chew-row--card-min-300 > .chew-cell, .chew-row--col-8.chew-row--card-min-300 > .chew-cell, .chew-row--col-9.chew-row--card-min-300 > .chew-cell, .chew-row--col-10.chew-row--card-min-300 > .chew-cell, .chew-row--col-11.chew-row--card-min-300 > .chew-cell, .chew-row--col-12.chew-row--card-min-300 > .chew-cell, .chew-row--col-auto.chew-row--card-min-300 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-350 > .chew-cell {
+  min-width: 350px;
+}
+
+@media (max-width: 4199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 3849px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 3499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 3149px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 2799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 2449px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-350 > .chew-cell, .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 2099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-350 > .chew-cell, .chew-row--col-7.chew-row--card-min-350 > .chew-cell, .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 1749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-350 > .chew-cell, .chew-row--col-6.chew-row--card-min-350 > .chew-cell, .chew-row--col-7.chew-row--card-min-350 > .chew-cell, .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 1399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-350 > .chew-cell, .chew-row--col-5.chew-row--card-min-350 > .chew-cell, .chew-row--col-6.chew-row--card-min-350 > .chew-cell, .chew-row--col-7.chew-row--card-min-350 > .chew-cell, .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1049px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-350 > .chew-cell, .chew-row--col-4.chew-row--card-min-350 > .chew-cell, .chew-row--col-5.chew-row--card-min-350 > .chew-cell, .chew-row--col-6.chew-row--card-min-350 > .chew-cell, .chew-row--col-7.chew-row--card-min-350 > .chew-cell, .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-350 > .chew-cell, .chew-row--col-3.chew-row--card-min-350 > .chew-cell, .chew-row--col-4.chew-row--card-min-350 > .chew-cell, .chew-row--col-5.chew-row--card-min-350 > .chew-cell, .chew-row--col-6.chew-row--card-min-350 > .chew-cell, .chew-row--col-7.chew-row--card-min-350 > .chew-cell, .chew-row--col-8.chew-row--card-min-350 > .chew-cell, .chew-row--col-9.chew-row--card-min-350 > .chew-cell, .chew-row--col-10.chew-row--card-min-350 > .chew-cell, .chew-row--col-11.chew-row--card-min-350 > .chew-cell, .chew-row--col-12.chew-row--card-min-350 > .chew-cell, .chew-row--col-auto.chew-row--card-min-350 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-400 > .chew-cell {
+  min-width: 400px;
+}
+
+@media (max-width: 4799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 4399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 3999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 3599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 3199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 2799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-400 > .chew-cell, .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 2399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-400 > .chew-cell, .chew-row--col-7.chew-row--card-min-400 > .chew-cell, .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 1999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-400 > .chew-cell, .chew-row--col-6.chew-row--card-min-400 > .chew-cell, .chew-row--col-7.chew-row--card-min-400 > .chew-cell, .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 1599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-400 > .chew-cell, .chew-row--col-5.chew-row--card-min-400 > .chew-cell, .chew-row--col-6.chew-row--card-min-400 > .chew-cell, .chew-row--col-7.chew-row--card-min-400 > .chew-cell, .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-400 > .chew-cell, .chew-row--col-4.chew-row--card-min-400 > .chew-cell, .chew-row--col-5.chew-row--card-min-400 > .chew-cell, .chew-row--col-6.chew-row--card-min-400 > .chew-cell, .chew-row--col-7.chew-row--card-min-400 > .chew-cell, .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-400 > .chew-cell, .chew-row--col-3.chew-row--card-min-400 > .chew-cell, .chew-row--col-4.chew-row--card-min-400 > .chew-cell, .chew-row--col-5.chew-row--card-min-400 > .chew-cell, .chew-row--col-6.chew-row--card-min-400 > .chew-cell, .chew-row--col-7.chew-row--card-min-400 > .chew-cell, .chew-row--col-8.chew-row--card-min-400 > .chew-cell, .chew-row--col-9.chew-row--card-min-400 > .chew-cell, .chew-row--col-10.chew-row--card-min-400 > .chew-cell, .chew-row--col-11.chew-row--card-min-400 > .chew-cell, .chew-row--col-12.chew-row--card-min-400 > .chew-cell, .chew-row--col-auto.chew-row--card-min-400 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-450 > .chew-cell {
+  min-width: 450px;
+}
+
+@media (max-width: 5399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 4949px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 4499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 4049px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 3599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 3149px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-450 > .chew-cell, .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 2699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-450 > .chew-cell, .chew-row--col-7.chew-row--card-min-450 > .chew-cell, .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 2249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-450 > .chew-cell, .chew-row--col-6.chew-row--card-min-450 > .chew-cell, .chew-row--col-7.chew-row--card-min-450 > .chew-cell, .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 1799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-450 > .chew-cell, .chew-row--col-5.chew-row--card-min-450 > .chew-cell, .chew-row--col-6.chew-row--card-min-450 > .chew-cell, .chew-row--col-7.chew-row--card-min-450 > .chew-cell, .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1349px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-450 > .chew-cell, .chew-row--col-4.chew-row--card-min-450 > .chew-cell, .chew-row--col-5.chew-row--card-min-450 > .chew-cell, .chew-row--col-6.chew-row--card-min-450 > .chew-cell, .chew-row--col-7.chew-row--card-min-450 > .chew-cell, .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-450 > .chew-cell, .chew-row--col-3.chew-row--card-min-450 > .chew-cell, .chew-row--col-4.chew-row--card-min-450 > .chew-cell, .chew-row--col-5.chew-row--card-min-450 > .chew-cell, .chew-row--col-6.chew-row--card-min-450 > .chew-cell, .chew-row--col-7.chew-row--card-min-450 > .chew-cell, .chew-row--col-8.chew-row--card-min-450 > .chew-cell, .chew-row--col-9.chew-row--card-min-450 > .chew-cell, .chew-row--col-10.chew-row--card-min-450 > .chew-cell, .chew-row--col-11.chew-row--card-min-450 > .chew-cell, .chew-row--col-12.chew-row--card-min-450 > .chew-cell, .chew-row--col-auto.chew-row--card-min-450 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-500 > .chew-cell {
+  min-width: 500px;
+}
+
+@media (max-width: 5999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 5499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 4999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 4499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 3999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 3499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-500 > .chew-cell, .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 2999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-500 > .chew-cell, .chew-row--col-7.chew-row--card-min-500 > .chew-cell, .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 2499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-500 > .chew-cell, .chew-row--col-6.chew-row--card-min-500 > .chew-cell, .chew-row--col-7.chew-row--card-min-500 > .chew-cell, .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 1999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-500 > .chew-cell, .chew-row--col-5.chew-row--card-min-500 > .chew-cell, .chew-row--col-6.chew-row--card-min-500 > .chew-cell, .chew-row--col-7.chew-row--card-min-500 > .chew-cell, .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-500 > .chew-cell, .chew-row--col-4.chew-row--card-min-500 > .chew-cell, .chew-row--col-5.chew-row--card-min-500 > .chew-cell, .chew-row--col-6.chew-row--card-min-500 > .chew-cell, .chew-row--col-7.chew-row--card-min-500 > .chew-cell, .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-500 > .chew-cell, .chew-row--col-3.chew-row--card-min-500 > .chew-cell, .chew-row--col-4.chew-row--card-min-500 > .chew-cell, .chew-row--col-5.chew-row--card-min-500 > .chew-cell, .chew-row--col-6.chew-row--card-min-500 > .chew-cell, .chew-row--col-7.chew-row--card-min-500 > .chew-cell, .chew-row--col-8.chew-row--card-min-500 > .chew-cell, .chew-row--col-9.chew-row--card-min-500 > .chew-cell, .chew-row--col-10.chew-row--card-min-500 > .chew-cell, .chew-row--col-11.chew-row--card-min-500 > .chew-cell, .chew-row--col-12.chew-row--card-min-500 > .chew-cell, .chew-row--col-auto.chew-row--card-min-500 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-550 > .chew-cell {
+  min-width: 550px;
+}
+
+@media (max-width: 6599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 6049px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 5499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 4949px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 4399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 3849px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-550 > .chew-cell, .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 3299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-550 > .chew-cell, .chew-row--col-7.chew-row--card-min-550 > .chew-cell, .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 2749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-550 > .chew-cell, .chew-row--col-6.chew-row--card-min-550 > .chew-cell, .chew-row--col-7.chew-row--card-min-550 > .chew-cell, .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 2199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-550 > .chew-cell, .chew-row--col-5.chew-row--card-min-550 > .chew-cell, .chew-row--col-6.chew-row--card-min-550 > .chew-cell, .chew-row--col-7.chew-row--card-min-550 > .chew-cell, .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1649px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-550 > .chew-cell, .chew-row--col-4.chew-row--card-min-550 > .chew-cell, .chew-row--col-5.chew-row--card-min-550 > .chew-cell, .chew-row--col-6.chew-row--card-min-550 > .chew-cell, .chew-row--col-7.chew-row--card-min-550 > .chew-cell, .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-550 > .chew-cell, .chew-row--col-3.chew-row--card-min-550 > .chew-cell, .chew-row--col-4.chew-row--card-min-550 > .chew-cell, .chew-row--col-5.chew-row--card-min-550 > .chew-cell, .chew-row--col-6.chew-row--card-min-550 > .chew-cell, .chew-row--col-7.chew-row--card-min-550 > .chew-cell, .chew-row--col-8.chew-row--card-min-550 > .chew-cell, .chew-row--col-9.chew-row--card-min-550 > .chew-cell, .chew-row--col-10.chew-row--card-min-550 > .chew-cell, .chew-row--col-11.chew-row--card-min-550 > .chew-cell, .chew-row--col-12.chew-row--card-min-550 > .chew-cell, .chew-row--col-auto.chew-row--card-min-550 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-600 > .chew-cell {
+  min-width: 600px;
+}
+
+@media (max-width: 7199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 6599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 5999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 5399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 4799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 4199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-600 > .chew-cell, .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 3599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-600 > .chew-cell, .chew-row--col-7.chew-row--card-min-600 > .chew-cell, .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 2999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-600 > .chew-cell, .chew-row--col-6.chew-row--card-min-600 > .chew-cell, .chew-row--col-7.chew-row--card-min-600 > .chew-cell, .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 2399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-600 > .chew-cell, .chew-row--col-5.chew-row--card-min-600 > .chew-cell, .chew-row--col-6.chew-row--card-min-600 > .chew-cell, .chew-row--col-7.chew-row--card-min-600 > .chew-cell, .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-600 > .chew-cell, .chew-row--col-4.chew-row--card-min-600 > .chew-cell, .chew-row--col-5.chew-row--card-min-600 > .chew-cell, .chew-row--col-6.chew-row--card-min-600 > .chew-cell, .chew-row--col-7.chew-row--card-min-600 > .chew-cell, .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-600 > .chew-cell, .chew-row--col-3.chew-row--card-min-600 > .chew-cell, .chew-row--col-4.chew-row--card-min-600 > .chew-cell, .chew-row--col-5.chew-row--card-min-600 > .chew-cell, .chew-row--col-6.chew-row--card-min-600 > .chew-cell, .chew-row--col-7.chew-row--card-min-600 > .chew-cell, .chew-row--col-8.chew-row--card-min-600 > .chew-cell, .chew-row--col-9.chew-row--card-min-600 > .chew-cell, .chew-row--col-10.chew-row--card-min-600 > .chew-cell, .chew-row--col-11.chew-row--card-min-600 > .chew-cell, .chew-row--col-12.chew-row--card-min-600 > .chew-cell, .chew-row--col-auto.chew-row--card-min-600 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-650 > .chew-cell {
+  min-width: 650px;
+}
+
+@media (max-width: 7799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 7149px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 6499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 5849px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 5199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 4549px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-650 > .chew-cell, .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 3899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-650 > .chew-cell, .chew-row--col-7.chew-row--card-min-650 > .chew-cell, .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 3249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-650 > .chew-cell, .chew-row--col-6.chew-row--card-min-650 > .chew-cell, .chew-row--col-7.chew-row--card-min-650 > .chew-cell, .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 2599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-650 > .chew-cell, .chew-row--col-5.chew-row--card-min-650 > .chew-cell, .chew-row--col-6.chew-row--card-min-650 > .chew-cell, .chew-row--col-7.chew-row--card-min-650 > .chew-cell, .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 1949px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-650 > .chew-cell, .chew-row--col-4.chew-row--card-min-650 > .chew-cell, .chew-row--col-5.chew-row--card-min-650 > .chew-cell, .chew-row--col-6.chew-row--card-min-650 > .chew-cell, .chew-row--col-7.chew-row--card-min-650 > .chew-cell, .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-650 > .chew-cell, .chew-row--col-3.chew-row--card-min-650 > .chew-cell, .chew-row--col-4.chew-row--card-min-650 > .chew-cell, .chew-row--col-5.chew-row--card-min-650 > .chew-cell, .chew-row--col-6.chew-row--card-min-650 > .chew-cell, .chew-row--col-7.chew-row--card-min-650 > .chew-cell, .chew-row--col-8.chew-row--card-min-650 > .chew-cell, .chew-row--col-9.chew-row--card-min-650 > .chew-cell, .chew-row--col-10.chew-row--card-min-650 > .chew-cell, .chew-row--col-11.chew-row--card-min-650 > .chew-cell, .chew-row--col-12.chew-row--card-min-650 > .chew-cell, .chew-row--col-auto.chew-row--card-min-650 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-700 > .chew-cell {
+  min-width: 700px;
+}
+
+@media (max-width: 8399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 7699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 6999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 6299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 5599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 4899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-700 > .chew-cell, .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 4199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-700 > .chew-cell, .chew-row--col-7.chew-row--card-min-700 > .chew-cell, .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 3499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-700 > .chew-cell, .chew-row--col-6.chew-row--card-min-700 > .chew-cell, .chew-row--col-7.chew-row--card-min-700 > .chew-cell, .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 2799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-700 > .chew-cell, .chew-row--col-5.chew-row--card-min-700 > .chew-cell, .chew-row--col-6.chew-row--card-min-700 > .chew-cell, .chew-row--col-7.chew-row--card-min-700 > .chew-cell, .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-700 > .chew-cell, .chew-row--col-4.chew-row--card-min-700 > .chew-cell, .chew-row--col-5.chew-row--card-min-700 > .chew-cell, .chew-row--col-6.chew-row--card-min-700 > .chew-cell, .chew-row--col-7.chew-row--card-min-700 > .chew-cell, .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-700 > .chew-cell, .chew-row--col-3.chew-row--card-min-700 > .chew-cell, .chew-row--col-4.chew-row--card-min-700 > .chew-cell, .chew-row--col-5.chew-row--card-min-700 > .chew-cell, .chew-row--col-6.chew-row--card-min-700 > .chew-cell, .chew-row--col-7.chew-row--card-min-700 > .chew-cell, .chew-row--col-8.chew-row--card-min-700 > .chew-cell, .chew-row--col-9.chew-row--card-min-700 > .chew-cell, .chew-row--col-10.chew-row--card-min-700 > .chew-cell, .chew-row--col-11.chew-row--card-min-700 > .chew-cell, .chew-row--col-12.chew-row--card-min-700 > .chew-cell, .chew-row--col-auto.chew-row--card-min-700 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-750 > .chew-cell {
+  min-width: 750px;
+}
+
+@media (max-width: 8999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 8249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 7499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 6749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 5999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 5249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-750 > .chew-cell, .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 4499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-750 > .chew-cell, .chew-row--col-7.chew-row--card-min-750 > .chew-cell, .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 3749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-750 > .chew-cell, .chew-row--col-6.chew-row--card-min-750 > .chew-cell, .chew-row--col-7.chew-row--card-min-750 > .chew-cell, .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 2999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-750 > .chew-cell, .chew-row--col-5.chew-row--card-min-750 > .chew-cell, .chew-row--col-6.chew-row--card-min-750 > .chew-cell, .chew-row--col-7.chew-row--card-min-750 > .chew-cell, .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-750 > .chew-cell, .chew-row--col-4.chew-row--card-min-750 > .chew-cell, .chew-row--col-5.chew-row--card-min-750 > .chew-cell, .chew-row--col-6.chew-row--card-min-750 > .chew-cell, .chew-row--col-7.chew-row--card-min-750 > .chew-cell, .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-750 > .chew-cell, .chew-row--col-3.chew-row--card-min-750 > .chew-cell, .chew-row--col-4.chew-row--card-min-750 > .chew-cell, .chew-row--col-5.chew-row--card-min-750 > .chew-cell, .chew-row--col-6.chew-row--card-min-750 > .chew-cell, .chew-row--col-7.chew-row--card-min-750 > .chew-cell, .chew-row--col-8.chew-row--card-min-750 > .chew-cell, .chew-row--col-9.chew-row--card-min-750 > .chew-cell, .chew-row--col-10.chew-row--card-min-750 > .chew-cell, .chew-row--col-11.chew-row--card-min-750 > .chew-cell, .chew-row--col-12.chew-row--card-min-750 > .chew-cell, .chew-row--col-auto.chew-row--card-min-750 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-800 > .chew-cell {
+  min-width: 800px;
+}
+
+@media (max-width: 9599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 8799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 7999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 7199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 6399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 5599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-800 > .chew-cell, .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 4799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-800 > .chew-cell, .chew-row--col-7.chew-row--card-min-800 > .chew-cell, .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 3999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-800 > .chew-cell, .chew-row--col-6.chew-row--card-min-800 > .chew-cell, .chew-row--col-7.chew-row--card-min-800 > .chew-cell, .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 3199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-800 > .chew-cell, .chew-row--col-5.chew-row--card-min-800 > .chew-cell, .chew-row--col-6.chew-row--card-min-800 > .chew-cell, .chew-row--col-7.chew-row--card-min-800 > .chew-cell, .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-800 > .chew-cell, .chew-row--col-4.chew-row--card-min-800 > .chew-cell, .chew-row--col-5.chew-row--card-min-800 > .chew-cell, .chew-row--col-6.chew-row--card-min-800 > .chew-cell, .chew-row--col-7.chew-row--card-min-800 > .chew-cell, .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-800 > .chew-cell, .chew-row--col-3.chew-row--card-min-800 > .chew-cell, .chew-row--col-4.chew-row--card-min-800 > .chew-cell, .chew-row--col-5.chew-row--card-min-800 > .chew-cell, .chew-row--col-6.chew-row--card-min-800 > .chew-cell, .chew-row--col-7.chew-row--card-min-800 > .chew-cell, .chew-row--col-8.chew-row--card-min-800 > .chew-cell, .chew-row--col-9.chew-row--card-min-800 > .chew-cell, .chew-row--col-10.chew-row--card-min-800 > .chew-cell, .chew-row--col-11.chew-row--card-min-800 > .chew-cell, .chew-row--col-12.chew-row--card-min-800 > .chew-cell, .chew-row--col-auto.chew-row--card-min-800 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-850 > .chew-cell {
+  min-width: 850px;
+}
+
+@media (max-width: 10199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 9349px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 8499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 7649px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 6799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 5949px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-850 > .chew-cell, .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 5099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-850 > .chew-cell, .chew-row--col-7.chew-row--card-min-850 > .chew-cell, .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 4249px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-850 > .chew-cell, .chew-row--col-6.chew-row--card-min-850 > .chew-cell, .chew-row--col-7.chew-row--card-min-850 > .chew-cell, .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 3399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-850 > .chew-cell, .chew-row--col-5.chew-row--card-min-850 > .chew-cell, .chew-row--col-6.chew-row--card-min-850 > .chew-cell, .chew-row--col-7.chew-row--card-min-850 > .chew-cell, .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2549px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-850 > .chew-cell, .chew-row--col-4.chew-row--card-min-850 > .chew-cell, .chew-row--col-5.chew-row--card-min-850 > .chew-cell, .chew-row--col-6.chew-row--card-min-850 > .chew-cell, .chew-row--col-7.chew-row--card-min-850 > .chew-cell, .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-850 > .chew-cell, .chew-row--col-3.chew-row--card-min-850 > .chew-cell, .chew-row--col-4.chew-row--card-min-850 > .chew-cell, .chew-row--col-5.chew-row--card-min-850 > .chew-cell, .chew-row--col-6.chew-row--card-min-850 > .chew-cell, .chew-row--col-7.chew-row--card-min-850 > .chew-cell, .chew-row--col-8.chew-row--card-min-850 > .chew-cell, .chew-row--col-9.chew-row--card-min-850 > .chew-cell, .chew-row--col-10.chew-row--card-min-850 > .chew-cell, .chew-row--col-11.chew-row--card-min-850 > .chew-cell, .chew-row--col-12.chew-row--card-min-850 > .chew-cell, .chew-row--col-auto.chew-row--card-min-850 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-900 > .chew-cell {
+  min-width: 900px;
+}
+
+@media (max-width: 10799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 9899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 8999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 8099px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 7199px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 6299px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-900 > .chew-cell, .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 5399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-900 > .chew-cell, .chew-row--col-7.chew-row--card-min-900 > .chew-cell, .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 4499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-900 > .chew-cell, .chew-row--col-6.chew-row--card-min-900 > .chew-cell, .chew-row--col-7.chew-row--card-min-900 > .chew-cell, .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 3599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-900 > .chew-cell, .chew-row--col-5.chew-row--card-min-900 > .chew-cell, .chew-row--col-6.chew-row--card-min-900 > .chew-cell, .chew-row--col-7.chew-row--card-min-900 > .chew-cell, .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-900 > .chew-cell, .chew-row--col-4.chew-row--card-min-900 > .chew-cell, .chew-row--col-5.chew-row--card-min-900 > .chew-cell, .chew-row--col-6.chew-row--card-min-900 > .chew-cell, .chew-row--col-7.chew-row--card-min-900 > .chew-cell, .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-900 > .chew-cell, .chew-row--col-3.chew-row--card-min-900 > .chew-cell, .chew-row--col-4.chew-row--card-min-900 > .chew-cell, .chew-row--col-5.chew-row--card-min-900 > .chew-cell, .chew-row--col-6.chew-row--card-min-900 > .chew-cell, .chew-row--col-7.chew-row--card-min-900 > .chew-cell, .chew-row--col-8.chew-row--card-min-900 > .chew-cell, .chew-row--col-9.chew-row--card-min-900 > .chew-cell, .chew-row--col-10.chew-row--card-min-900 > .chew-cell, .chew-row--col-11.chew-row--card-min-900 > .chew-cell, .chew-row--col-12.chew-row--card-min-900 > .chew-cell, .chew-row--col-auto.chew-row--card-min-900 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-950 > .chew-cell {
+  min-width: 950px;
+}
+
+@media (max-width: 11399px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 10449px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 9499px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 8549px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 7599px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 6649px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-950 > .chew-cell, .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 5699px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-950 > .chew-cell, .chew-row--col-7.chew-row--card-min-950 > .chew-cell, .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 4749px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-950 > .chew-cell, .chew-row--col-6.chew-row--card-min-950 > .chew-cell, .chew-row--col-7.chew-row--card-min-950 > .chew-cell, .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 3799px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-950 > .chew-cell, .chew-row--col-5.chew-row--card-min-950 > .chew-cell, .chew-row--col-6.chew-row--card-min-950 > .chew-cell, .chew-row--col-7.chew-row--card-min-950 > .chew-cell, .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2849px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-950 > .chew-cell, .chew-row--col-4.chew-row--card-min-950 > .chew-cell, .chew-row--col-5.chew-row--card-min-950 > .chew-cell, .chew-row--col-6.chew-row--card-min-950 > .chew-cell, .chew-row--col-7.chew-row--card-min-950 > .chew-cell, .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1899px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-950 > .chew-cell, .chew-row--col-3.chew-row--card-min-950 > .chew-cell, .chew-row--col-4.chew-row--card-min-950 > .chew-cell, .chew-row--col-5.chew-row--card-min-950 > .chew-cell, .chew-row--col-6.chew-row--card-min-950 > .chew-cell, .chew-row--col-7.chew-row--card-min-950 > .chew-cell, .chew-row--col-8.chew-row--card-min-950 > .chew-cell, .chew-row--col-9.chew-row--card-min-950 > .chew-cell, .chew-row--col-10.chew-row--card-min-950 > .chew-cell, .chew-row--col-11.chew-row--card-min-950 > .chew-cell, .chew-row--col-12.chew-row--card-min-950 > .chew-cell, .chew-row--col-auto.chew-row--card-min-950 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
+.chew-row--card-min-1000 > .chew-cell {
+  min-width: 1000px;
+}
+
+@media (max-width: 11999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 11 columns */
+  .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 9.09091%;
+  }
+}
+@media (max-width: 10999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 10 columns */
+  .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 10%;
+  }
+}
+@media (max-width: 9999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 9 columns */
+  .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 11.11111%;
+  }
+}
+@media (max-width: 8999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 8 columns */
+  .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 12.5%;
+  }
+}
+@media (max-width: 7999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 7 columns */
+  .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 14.28571%;
+  }
+}
+@media (max-width: 6999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 6 columns */
+  .chew-row--col-7.chew-row--card-min-1000 > .chew-cell, .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 16.66667%;
+  }
+}
+@media (max-width: 5999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 5 columns */
+  .chew-row--col-6.chew-row--card-min-1000 > .chew-cell, .chew-row--col-7.chew-row--card-min-1000 > .chew-cell, .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 20%;
+  }
+}
+@media (max-width: 4999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 4 columns */
+  .chew-row--col-5.chew-row--card-min-1000 > .chew-cell, .chew-row--col-6.chew-row--card-min-1000 > .chew-cell, .chew-row--col-7.chew-row--card-min-1000 > .chew-cell, .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 25%;
+  }
+}
+@media (max-width: 3999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 3 columns */
+  .chew-row--col-4.chew-row--card-min-1000 > .chew-cell, .chew-row--col-5.chew-row--card-min-1000 > .chew-cell, .chew-row--col-6.chew-row--card-min-1000 > .chew-cell, .chew-row--col-7.chew-row--card-min-1000 > .chew-cell, .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 33.33333%;
+  }
+}
+@media (max-width: 2999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 2 columns */
+  .chew-row--col-3.chew-row--card-min-1000 > .chew-cell, .chew-row--col-4.chew-row--card-min-1000 > .chew-cell, .chew-row--col-5.chew-row--card-min-1000 > .chew-cell, .chew-row--col-6.chew-row--card-min-1000 > .chew-cell, .chew-row--col-7.chew-row--card-min-1000 > .chew-cell, .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell {
+    width: 50%;
+  }
+}
+@media (max-width: 1999px) {
+  /* Responsive inline-block fallback */
+  /* Screen support only 1 columns */
+  .chew-row--col-2.chew-row--card-min-1000 > .chew-cell, .chew-row--col-3.chew-row--card-min-1000 > .chew-cell, .chew-row--col-4.chew-row--card-min-1000 > .chew-cell, .chew-row--col-5.chew-row--card-min-1000 > .chew-cell, .chew-row--col-6.chew-row--card-min-1000 > .chew-cell, .chew-row--col-7.chew-row--card-min-1000 > .chew-cell, .chew-row--col-8.chew-row--card-min-1000 > .chew-cell, .chew-row--col-9.chew-row--card-min-1000 > .chew-cell, .chew-row--col-10.chew-row--card-min-1000 > .chew-cell, .chew-row--col-11.chew-row--card-min-1000 > .chew-cell, .chew-row--col-12.chew-row--card-min-1000 > .chew-cell, .chew-row--col-auto.chew-row--card-min-1000 > .chew-cell {
+    width: 100%;
+    /* 1 column fix: Reset the min-width */
+    display: block;
+    min-width: 0;
+  }
+}
 /* Gutter modifiers */
 .chew-row--gutter > .chew-cell {
   padding: 0.5em;
@@ -151,307 +1828,6 @@
   padding: 0;
 }
 
-/* Min-width modifiers */
-.chew-row--card-min-50 > .chew-cell {
-  min-width: 50px;
-}
-
-@media (max-width: 99px) {
-  .chew-row--card-min-50 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-100 > .chew-cell {
-  min-width: 100px;
-}
-
-@media (max-width: 199px) {
-  .chew-row--card-min-100 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-150 > .chew-cell {
-  min-width: 150px;
-}
-
-@media (max-width: 299px) {
-  .chew-row--card-min-150 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-200 > .chew-cell {
-  min-width: 200px;
-}
-
-@media (max-width: 399px) {
-  .chew-row--card-min-200 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-250 > .chew-cell {
-  min-width: 250px;
-}
-
-@media (max-width: 499px) {
-  .chew-row--card-min-250 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-300 > .chew-cell {
-  min-width: 300px;
-}
-
-@media (max-width: 599px) {
-  .chew-row--card-min-300 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-350 > .chew-cell {
-  min-width: 350px;
-}
-
-@media (max-width: 699px) {
-  .chew-row--card-min-350 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-400 > .chew-cell {
-  min-width: 400px;
-}
-
-@media (max-width: 799px) {
-  .chew-row--card-min-400 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-450 > .chew-cell {
-  min-width: 450px;
-}
-
-@media (max-width: 899px) {
-  .chew-row--card-min-450 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-500 > .chew-cell {
-  min-width: 500px;
-}
-
-@media (max-width: 999px) {
-  .chew-row--card-min-500 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-550 > .chew-cell {
-  min-width: 550px;
-}
-
-@media (max-width: 1099px) {
-  .chew-row--card-min-550 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-600 > .chew-cell {
-  min-width: 600px;
-}
-
-@media (max-width: 1199px) {
-  .chew-row--card-min-600 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-650 > .chew-cell {
-  min-width: 650px;
-}
-
-@media (max-width: 1299px) {
-  .chew-row--card-min-650 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-700 > .chew-cell {
-  min-width: 700px;
-}
-
-@media (max-width: 1399px) {
-  .chew-row--card-min-700 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-750 > .chew-cell {
-  min-width: 750px;
-}
-
-@media (max-width: 1499px) {
-  .chew-row--card-min-750 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-800 > .chew-cell {
-  min-width: 800px;
-}
-
-@media (max-width: 1599px) {
-  .chew-row--card-min-800 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-850 > .chew-cell {
-  min-width: 850px;
-}
-
-@media (max-width: 1699px) {
-  .chew-row--card-min-850 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-900 > .chew-cell {
-  min-width: 900px;
-}
-
-@media (max-width: 1799px) {
-  .chew-row--card-min-900 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-950 > .chew-cell {
-  min-width: 950px;
-}
-
-@media (max-width: 1899px) {
-  .chew-row--card-min-950 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
-.chew-row--card-min-1000 > .chew-cell {
-  min-width: 1000px;
-}
-
-@media (max-width: 1999px) {
-  .chew-row--card-min-1000 > .chew-cell {
-    /* When there is no place for 2 columns: Cancel cell layout  */
-    /* Flex implementation */
-    display: block;
-    width: 100%;
-    min-width: 0;
-    /* Flex fallback */
-    float: none;
-  }
-}
 /* Max-width modifiers */
 .chew-row--card-max-50 > * > .chew-card {
   max-width: 50px;
