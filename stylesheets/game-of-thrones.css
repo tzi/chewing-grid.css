@@ -1,0 +1,74 @@
+body {
+    background: aliceblue;
+}
+.character {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #aaa;
+    text-decoration: none;
+}
+.character__header {
+    padding: 0.5em;
+    background: white;
+}
+.character__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.2em;
+}
+.character__avatar > img {
+    width: 70px;
+    height: 70px;
+    background: #f0f0f0;
+    padding: 2px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
+.character__id {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.2em;
+    line-height: 1.2;
+}
+.character__name {
+    color: #333;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+    text-decoration: none;
+}
+.character__house {
+    color: #aaa;
+    display: block;
+    font-size: 60%;
+    font-weight: normal;
+    font-style: italic;
+}
+.character__infos {
+    padding: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    color: #777;
+    font-size: 60%;
+    list-style: none;
+}
+.character__infos > li {
+    padding: 0.5em;
+}
+.character__infos > li + li {
+    border-top: 1px solid #ccc;
+}
+.lannister .character__house {
+    color: #C8A700;
+}
+.lannister .character__avatar > img {
+    background: #FFD600;
+}
+.targaryen .character__house {
+    color: #D1371B;
+}
+.targaryen .character__avatar > img {
+    background: #D1371B;
+}
