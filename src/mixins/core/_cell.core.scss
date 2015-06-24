@@ -1,18 +1,14 @@
-@mixin chewing-grid__cell($flex-fallback: left)
+@mixin chewing-grid__cell()
 {
   /* Flex implementation */
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 
-  /* Flex fallback */
-  @if ($flex-fallback == inline-block) {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: -0.31em;
-    margin-bottom: -0.31em;
-  } @else {
-    float: unquote($flex-fallback);
-  }
+  /* Inline-block fallback */
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -0.31em;
+  margin-bottom: -0.31em;
   
   /* Make the card full height */
   display: -ms-flex;

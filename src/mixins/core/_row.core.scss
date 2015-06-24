@@ -9,12 +9,5 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
-  &:after {
-    /* Clearfix */
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 

@@ -9,8 +9,5 @@
 /* Gutter modifiers */
 @include chewing-grid__atomic-gutter();
 
-/* Min-width modifiers */
-@include chewing-grid__atomic-card-min();
-
 /* Max-width modifiers */
 @include chewing-grid__atomic-card-max();

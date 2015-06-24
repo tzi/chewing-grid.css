@@ -14,7 +14,6 @@ $chewing-grid__prefix: 'chew-';
     $card-max-width: 300px,
     $card-gutter: 0,
     $column-max-count: auto,
-    $flex-fallback: left,
     $prefix: $chewing-grid__prefix
 ) {
     .#{$prefix} {
@@ -24,7 +23,7 @@ $chewing-grid__prefix: 'chew-';
         }
 
         &cell {
-            @include chewing-grid__cell($flex-fallback);
+            @include chewing-grid__cell();
             @include chewing-grid__cell--gutter($card-gutter);
             @include chewing-grid__cell--column($column-max-count);
             /* Trigger item wrapping with flexbox & float */

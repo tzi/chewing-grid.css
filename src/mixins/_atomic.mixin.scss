@@ -1,7 +1,6 @@
 // Atomic mixins
 @import 'atomic/col.atomic';
 @import 'atomic/gutter.atomic';
-@import 'atomic/card-min.atomic';
 @import 'atomic/card-max.atomic';
 
 @function strip-unit($value)

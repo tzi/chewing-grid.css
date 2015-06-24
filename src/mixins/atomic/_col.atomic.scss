@@ -1,19 +1,52 @@
 @mixin chewing-grid__atomic-col(
-  $start-size: 1,
-  $end-size: 12,
-  $has-auto: true,
-  $modifier: 'col-', 
+  $cell-min-size-map: generate-size-map(1, 20, 50px),
+  $cell-min-modifier: 'card-min-', 
+  $col-start-size: 1,
+  $col-end-size: 12,
+  $col-has-auto: true,
+  $col-modifier: 'col-', 
   $prefix: $chewing-grid__prefix
 ) {
-  @if ($has-auto) {
-    .#{$prefix}row--#{$modifier}auto > .#{$prefix}cell {
+  
+  @if ($col-has-auto) {
+    .#{$prefix}row--#{$col-modifier}auto > .#{$prefix}cell {
       @include chewing-grid__cell--column();
     }
   }
 
-  @for $counter from $start-size through $end-size {
-    .#{$prefix}row--#{$modifier}#{$counter} > .#{$prefix}cell {
-      @include chewing-grid__cell--column($counter);
+  @for $col-size from $col-start-size through $col-end-size {
+    .#{$prefix}row--#{$col-modifier}#{$col-size} > .#{$prefix}cell {
+      @include chewing-grid__cell--column($col-size);
+    }
+  }
+  
+  @each $name, $min in $cell-min-size-map {
+    .#{$prefix}row--#{$cell-min-modifier}#{$name} > .#{$prefix}cell {
+      min-width: $min;
+    }
+
+    @for $screen-size from ($col-end-size - 1) through $col-start-size {
+      @media (max-width: #{($screen-size + 1) * $min - 1}) {
+        /* Responsive inline-block fallback */
+        /* Screen support only #{$screen-size} columns */
+        $selectorList: ();
+        @for $col-size from ($screen-size + 1) through $col-end-size {
+          $selector: unquote('.#{$prefix}row--#{$col-modifier}#{$col-size}.#{$prefix}row--#{$cell-min-modifier}#{$name} > .#{$prefix}cell');
+          $selectorList: append($selectorList, $selector);
+        }
+        @if ($screen-size == 1 and $col-has-auto) {
+          $selector: unquote('.#{$prefix}row--#{$col-modifier}auto.#{$prefix}row--#{$cell-min-modifier}#{$name} > .#{$prefix}cell');
+          $selectorList: append($selectorList, $selector);
+        }
+        #{zip($selectorList)} {
+          width: 100% / $screen-size;
+          @if ($screen-size == 1) {
+            /* 1 column fix: Reset the min-width */
+            display: block;
+            min-width: 0;
+          }
+        }
+      }
     }
   }
 }
