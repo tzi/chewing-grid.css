@@ -1,5 +1,5 @@
-@import 'mixins/grid.mixin';
-@import 'mixins/atomic.mixin';
+@import '../src/mixins/grid.mixin';
+@import '../src/mixins/atomic.mixin';
 
 #mapado-plugin {
   @include chewing-grid(
