@@ -17,24 +17,29 @@ body {
     padding: 0 1em;
 }
 
-/* DEMO GRIDS */
+/* LIVE DEMO */
 iframe {
     background: #f0f0f0;
     box-shadow: 0 0 3px rgba(11, 11, 11, 0.5) inset;
 }
 
-style[contenteditable] {
-    font-family: monospace;
-    white-space: pre-wrap;
-
-    display: block;
-    padding: 1em;
-    border: 1px solid lightblue;
-    background: white;
+.resizable {
+    margin-right: 8%;
 }
-style[contenteditable]:focus {
-    border-color: tomato;
 
+/* DEMO SETTING */
+.control__label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.control__input {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #eaeaea;
+    margin: 0.3rem 0;
+    padding: 0.3rem;
+    width: 60px;
 }
 
 /* GITHUB RIBBON */

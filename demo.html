@@ -9,9 +9,29 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="build/chewing-grid-atomic.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheets/game-of-thrones.css"/>
+    <style id="style-column-max">
+        .character-list .chew-cell {
+            width: /***/;
+        }
+    </style>
+    <style id="style-gutter-size">
+        .character-list .chew-cell {
+            padding: /***/;
+        }
+    </style>
+    <style id="style-card-min">
+        .character-list .chew-cell {
+            min-width: /***/;
+        }
+    </style>
+    <style id="style-card-max">
+        .character-list .chew-card {
+            max-width: /***/;
+        }
+    </style>
 </head>
 <body>
-<ul class="chew-row chew-row--col-4 chew-row--gutter character-list" onload='javascript:resizeIframe(this);'>
+<ul class="chew-row character-list" onload='javascript:resizeIframe(this);'>
     <li class="chew-cell">
         <a class="chew-card character lannister" href="http://www.imdb.com/character/ch0146096/">
             <div class="character__header">
@@ -220,6 +240,16 @@
     <div class="chew-cell chew-cell--ghost">17</div>
     <div class="chew-cell chew-cell--ghost">18</div>
     <div class="chew-cell chew-cell--ghost">19</div>
+    <div class="chew-cell chew-cell--ghost">20</div>
+    <div class="chew-cell chew-cell--ghost">21</div>
+    <div class="chew-cell chew-cell--ghost">22</div>
+    <div class="chew-cell chew-cell--ghost">23</div>
+    <div class="chew-cell chew-cell--ghost">24</div>
+    <div class="chew-cell chew-cell--ghost">25</div>
+    <div class="chew-cell chew-cell--ghost">26</div>
+    <div class="chew-cell chew-cell--ghost">27</div>
+    <div class="chew-cell chew-cell--ghost">28</div>
+    <div class="chew-cell chew-cell--ghost">29</div>
 </ul>
 <script>
     if (parent) {

@@ -1,7 +1,6 @@
 .resizable {
     position: relative;
     padding-right: 6px;
-    margin-right: 1em;
 }
 .resizable.drag:before {
     content: '';

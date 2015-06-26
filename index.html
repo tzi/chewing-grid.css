@@ -16,84 +16,63 @@
 
 <div class="container">
     <h1>chewing-grid.css</h1>
-    
+
     <p>
         The chewing-grid is an ideal CSS Grid for card listing design.<br>
-        It was made with flexbox & love by <a href="http://tzi.fr">Thomas ZILLIOX</a>.
+        It was made with flexbox & love by <a href="http://tzi.fr">Thomas ZILLIOX</a>.</p>
     </p>
-    
+
     <h2>See live demo</h2>
+
+    <div class="rythm">
+        <form name="controls" class="chew-row chew-row--col-4 chew-row--gutter">
+            <div class="chew-cell">
+                <label class="control chew-card" for="input-column-max">
+                    <span class="control__label">Max columns:</span>
+                    <input class="control__input" type="number" min="1" id="input-column-max" name="column-max">
+                </label>
+            </div>
+            <div class="chew-cell">
+                <label class="control chew-card" for="input-gutter-size">
+                    <span class="control__label">Gutter size:</span>
+                    <input class="control__input" type="text" id="input-gutter" name="gutter-size">
+                </label>
+            </div>
+            <div class="chew-cell">
+                <label class="control chew-card" for="input-card-min">
+                    <span class="control__label">Card min-width:</span>
+                    <input class="control__input" type="text" id="input-card-min" name="card-min">
+                </label>
+            </div>
+            <div class="chew-cell">
+                <label class="control chew-card" for="input-card-max">
+                    <span class="control__label">Card max-width:</span>
+                    <input class="control__input" type="text" id="input-card-max" name="card-max">
+                </label>
+            </div>
+        </form>
+    </div>
 </div>
 
 <div class="rythm resizable">
-    <iframe src="demo.html"></iframe>
+    <iframe src="demo.html" onload="javascript:initAllSetting(this);"></iframe>
 </div>
 
 <div class="container">
     <p class="info">
         Use the right bars to resize the demonstration.
     </p>
-    
-    <h2>Change the current settings</h2>
-
-    <div class="rythm">
-        <ul class="chew-row chew-row--col-4 chew-row--card-min-200">
-            <li class="chew-cell">
-                <style contenteditable class="chew-card">
-                    /* Max 4 columns */
-                    .chew-cell {
-                        width: 25%;
-                    }
-                </style>
-            </li>
-            <li class="chew-cell">
-                <style contenteditable class="chew-card">
-                    /* 1em gutter (=2*0.5) */
-                    .chew-cell {
-                        padding: 0.5em;
-                    }
-                </style>
-            </li>
-            <li class="chew-cell">
-                <style contenteditable class="chew-card">
-                    /* Card min-width */
-                    .chew-cell {
-                        min-width: 200px;
-                    }
-                </style>
-            </li>
-            <li class="chew-cell">
-                <style contenteditable class="chew-card">
-                    /* Card max-width */
-                    .chew-card {
-                        max-width: none;
-                    }
-                </style>
-            </li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-            <li class="chew-cell chew-cell--ghost"></li>
-        </ul>
-    </div>
 </div>
 
 <a href="https://github.com/tzi/chewing-grid.css">
-    <img class="gh-ribbon" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" />
+    <img class="gh-ribbon"
+         src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+         alt="Fork me on GitHub"
+         data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"/>
 </a>
 
 <script src="javascript/unindentor.js"></script>
 <script src="javascript/resizer.js"></script>
-<script>
-    unindentor.unindentElementList('style[contenteditable]');
-    function resizeIframe() {
-        var iframe = document.querySelector('iframe');
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-    }
-</script>
+<script src="javascript/demo.js"></script>
 </body>
 </html>
