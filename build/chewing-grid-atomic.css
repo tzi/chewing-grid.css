@@ -54,8 +54,8 @@
 }
 .chew-card {
   /* Flex implementation */
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   /* Centered card */
   display: block;
   margin: 0 auto;
