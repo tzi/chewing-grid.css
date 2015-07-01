@@ -1,8 +1,12 @@
 (function ready(fn) {
-  if (document.readyState != 'loading'){
+  if (document.readyState != 'loading') {
     fn();
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fn);
   } else {
-    document.addEventListener('DOMContentLoaded', fn, false);
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState != 'loading') fn();
+    });
   }
 })(function init() {
   
