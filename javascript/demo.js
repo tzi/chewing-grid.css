@@ -1,8 +1,11 @@
-unindentor.unindentElementList('style[contenteditable]');
-function resizeIframe() {
-  var iframe = document.querySelector('iframe');
-  iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-}
+/* Initialization */
+var demoResizer;
+ready(function init() {
+  demoResizer = resizer.init('.resizable');
+});
+
+
+/* Setting management */
 function initAllSetting(demoNode) {
   var options = [
     ['column-max', 4, function (a) {
@@ -25,7 +28,7 @@ function initAllSetting(demoNode) {
     input.value = value;
     input.addEventListener('input', function () {
       applySetting();
-      resizeIframe();
+      demoResizer.update();
     });
     applySetting();
 
@@ -45,5 +48,17 @@ function initAllSetting(demoNode) {
     function getUnit(value) {
       return value.match(/\D+$/);
     }
+  }
+}
+
+function ready(fn) {
+  if (document.readyState != 'loading') {
+    fn();
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fn);
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState != 'loading') fn();
+    });
   }
 }

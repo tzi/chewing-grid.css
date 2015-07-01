@@ -18,6 +18,9 @@
         .character-list .chew-cell {
             padding: /***/;
         }
+        .character-list .chew-cell--ghost {
+            padding: 0;
+        }
     </style>
     <style id="style-card-min">
         .character-list .chew-cell {
@@ -31,7 +34,7 @@
     </style>
 </head>
 <body>
-<ul class="chew-row character-list" onload='javascript:resizeIframe(this);'>
+<ul class="chew-row character-list">
     <li class="chew-cell">
         <a class="chew-card character lannister" href="http://www.imdb.com/character/ch0146096/">
             <div class="character__header">
@@ -251,41 +254,5 @@
     <div class="chew-cell chew-cell--ghost">28</div>
     <div class="chew-cell chew-cell--ghost">29</div>
 </ul>
-<script>
-    if (parent) {
-        function debounce(func, wait, immediate) {
-            var timeout;
-            return function() {
-                var context = this, args = arguments;
-                var later = function() {
-                    timeout = null;
-                    if (!immediate) func.apply(context, args);
-                };
-                var callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func.apply(context, args);
-            };
-        }
-        
-        function onResize(fn) {
-            if (document.readyState != 'loading'){
-                fn();
-            } else if (document.addEventListener) {
-                document.addEventListener('DOMContentLoaded', fn);
-                window.addEventListener('resize', fn);
-            } else {
-                document.attachEvent('onreadystatechange', function() {
-                    if (document.readyState != 'loading') fn();
-                });
-                window.attachEvent('onresize', fn);
-            }
-        }
-
-        onResize(debounce(function() {
-            parent.resizeIframe();
-        }, 250));
-    }
-</script>
 </body>
 </html>
