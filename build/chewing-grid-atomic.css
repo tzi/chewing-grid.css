@@ -37,10 +37,10 @@
   /* Allow to add gutter via padding without extending the box */
   box-sizing: border-box;
   padding: 0;
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: auto;
-  /* Trigger item wrapping with flexbox & float */
+  /* Trigger item wrapping with flexbox & inline-block */
   min-width: 200px;
 }
 .chew-cell.chew-cell--ghost {
@@ -54,8 +54,8 @@
 }
 .chew-card {
   /* Flex implementation */
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   /* Centered card */
   display: block;
   margin: 0 auto;
@@ -64,91 +64,91 @@
 
 /* Atomic column modifiers */
 .chew-row--col-auto > .chew-cell {
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: auto;
 }
 
 .chew-row--col-1 > .chew-cell {
   /* Max 1 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 100%;
 }
 
 .chew-row--col-2 > .chew-cell {
   /* Max 2 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 50%;
 }
 
 .chew-row--col-3 > .chew-cell {
   /* Max 3 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 33.33333%;
 }
 
 .chew-row--col-4 > .chew-cell {
   /* Max 4 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 25%;
 }
 
 .chew-row--col-5 > .chew-cell {
   /* Max 5 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 20%;
 }
 
 .chew-row--col-6 > .chew-cell {
   /* Max 6 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 16.66667%;
 }
 
 .chew-row--col-7 > .chew-cell {
   /* Max 7 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 14.28571%;
 }
 
 .chew-row--col-8 > .chew-cell {
   /* Max 8 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 12.5%;
 }
 
 .chew-row--col-9 > .chew-cell {
   /* Max 9 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 11.11111%;
 }
 
 .chew-row--col-10 > .chew-cell {
   /* Max 10 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 10%;
 }
 
 .chew-row--col-11 > .chew-cell {
   /* Max 11 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 9.09091%;
 }
 
 .chew-row--col-12 > .chew-cell {
   /* Max 12 columns */
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: 8.33333%;
 }

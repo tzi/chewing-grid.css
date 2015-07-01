@@ -37,10 +37,10 @@
   /* Allow to add gutter via padding without extending the box */
   box-sizing: border-box;
   padding: 0;
-  /* Flex & float implementation */
+  /* Flex & inline-block implementation */
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: auto;
-  /* Trigger item wrapping with flexbox & float */
+  /* Trigger item wrapping with flexbox & inline-block */
   min-width: 200px;
 }
 .chew-cell.chew-cell--ghost {
@@ -54,8 +54,8 @@
 }
 .chew-card {
   /* Flex implementation */
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   /* Centered card */
   display: block;
   margin: 0 auto;
