@@ -9,7 +9,7 @@
   letter-spacing: -0.31em; /* Collapse white-space */
   *letter-spacing: normal; /* IE < 8 */
   *word-spacing: -0.43em; /* IE < 8 */
-  text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+  text-rendering: optimizespeed; /* Webkit fix: source http://purecss.io/grids/  */
   
   /* Unset list styles */
   list-style: none;

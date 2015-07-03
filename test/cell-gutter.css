@@ -11,7 +11,7 @@
   *word-spacing: -0.43em;
   /* IE < 8 */
   text-rendering: optimizespeed;
-  /* Webkit: fixes text-rendering: optimizeLegibility */
+  /* Webkit fix: source http://purecss.io/grids/  */
   /* Unset list styles */
   list-style: none;
   padding: 0;
@@ -31,6 +31,7 @@
   letter-spacing: normal;
   *word-spacing: normal;
   /* IE < 8 */
+  text-rendering: auto;
   /* Make the card full height */
   display: -ms-flex;
   display: flex;

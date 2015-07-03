@@ -12,6 +12,7 @@
   /* Reset white-space properties */
   letter-spacing: normal;
   *word-spacing: normal; /* IE < 8 */
+  text-rendering: auto; 
   
   /* Make the card full height */
   display: -ms-flex;
