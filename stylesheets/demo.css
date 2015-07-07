@@ -18,7 +18,7 @@ body {
 }
 
 /* LIVE DEMO */
-iframe {
+.demo {
     background: #f0f0f0;
     box-shadow: 0 0 3px rgba(11, 11, 11, 0.5) inset;
 }
@@ -46,6 +46,14 @@ iframe {
 .gh-ribbon {
     position: absolute;
     top: 0; right: 0; border: 0;
+}
+.gh-star {
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    border: 0;
+    overflow: hidden;
+    vertical-align: -0.05em;
 }
 
 /* UTILS */
