@@ -2,7 +2,7 @@
 /* RESET */
 body {
     padding-bottom: 3em;
-    background: linear-gradient(to bottom, #E8EFFF, white 150px);
+    background: white linear-gradient(to bottom, #E8EFFF, white 150px) repeat-x;
 }
 
 *,
