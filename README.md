@@ -10,7 +10,7 @@ Not just another grid
 Unlike regular grids, you don't have to explicitly determine when your design will break.
 So you don't have to write and maintain media-queries!
 
-For example, *the chewing-grid will handle itself to go from 4 to 3 columns* when there is no enough space.
+For example, **the chewing-grid will handle itself to go from 4 to 3 columns** when there is no enough space.
 The grid behaviour will depend on its container width and your settings:
 
  * Minimum and maximum card width
