@@ -1,7 +1,7 @@
 chewing-grid.css
 ======
 
-An ideal CSS Grid for card listing design.
+An ideal CSS Grid for card listing design, responsive with no media-queries. 
 
 
 Not just another grid
@@ -21,7 +21,7 @@ The grid behaviour will depend on its container width and your settings:
 You can play with it: [Live demo](http://tzi.github.io/chewing-grid.css)!
 
  
-1. Quick start
+Quick start
 -------
 
 Install chewing-grid via bower and add it to bower.json dependencies
@@ -32,9 +32,9 @@ bower install chewing-grid --save
 
 The following HTML create a grid where the cells are:
 
+ * Maximum 4 in the same row
  * Minimum 300px large
  * Maximum 500px large
- * Maximum 4 in the same row
 
 ```html
 <link rel="stylesheet" type="text/css" href="build/chewing-grid-atomic.css"/>
@@ -44,9 +44,6 @@ The following HTML create a grid where the cells are:
     </li>
     <li class="chew-cell">
         <div class="chew-card">2</div>
-    </li>
-    <li class="chew-cell">
-        <div class="chew-card">3</div>
     </li>
     <!-- [...] -->
 </ul>
