@@ -1,24 +1,17 @@
 chewing-grid.css
 ======
 
-An ideal CSS Grid for card listing design, responsive with no media-queries. 
+A CSS Grid ideal for *card listing design*. For example: tiles, videos and articles listing.
 
+No media queries, yet Chewing Grid will adjust the number of columns depending on the available width and your settings regarding:
 
-Not just another grid
--------
+* the maximum number of colums
+* the minim and maximum card width
 
-Unlike regular grids, you don't have to explicitly determine when your design will break.
-So you don't have to write and maintain media-queries!
-
-For example, **the chewing-grid will handle itself to go from 4 to 3 columns** when there is no enough space.
-The grid behaviour will depend on its container width and your settings:
-
- * Maximum column number
- * Minimum and maximum card width
+Here's a GIF to show you how it looks.
+If you want to play with it, check out [the live demo](http://tzi.github.io/chewing-grid.css).
 
 ![Demonstration screencast](http://tzi.github.io/chewing-grid.css/demo.gif)
-
-You can play with it: [Live demo](http://tzi.github.io/chewing-grid.css)!
 
  
 Quick start
