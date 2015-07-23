@@ -1,7 +1,7 @@
 chewing-grid.css
 ======
 
-A CSS Grid ideal for **card listing design**. For example: tiles, videos and articles listing.
+A CSS Grid ideal for **card listing design**. For example: tiles, videos or articles listing.
 
 No media queries, yet Chewing Grid will adjust the number of columns depending on the available width and your settings regarding:
 
