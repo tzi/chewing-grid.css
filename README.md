@@ -8,8 +8,8 @@ No media queries, yet chewing-grid will adjust the number of columns depending o
 * the maximum number of columns
 * the minim and maximum card width
 
-chewing-grid provides atomic classes ready to use in your HTML (1 to 12 columns and widths in 50px intervals).
-You can also use it with Sass to generate your own classes, or even to build a custom semantic grid.
+chewing-grid provides **atomic classes ready to use** in your HTML (1 to 12 columns and widths in 50px intervals).
+**You can also use it with Sass** to generate your own classes, or even to build a custom semantic grid.
 
 Here's a GIF to show you how it looks.
 If you want to play with it, check out [the live demo](http://tzi.github.io/chewing-grid.css).
