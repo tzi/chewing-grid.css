@@ -5,7 +5,7 @@ A CSS Grid ideal for **card listing design**. For example: tiles, videos or arti
 
 No media queries, yet Chewing Grid will adjust the number of columns depending on the available width and your settings regarding:
 
-* the maximum number of colums
+* the maximum number of columns
 * the minim and maximum card width
 
 Here's a GIF to show you how it looks.
@@ -23,7 +23,9 @@ Install chewing-grid via bower and add it to bower.json dependencies
 bower install chewing-grid --save
 ``` 
 
-The following HTML create a grid where the cells are:
+You can use it with atomic classes, custom CSS rules or Sass mixins.
+
+For example: the following HTML use atomic classes to create a grid where the cells are:
 
  * Maximum 4 in the same row
  * Minimum 300px large
