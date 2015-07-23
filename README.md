@@ -3,10 +3,13 @@ chewing-grid.css
 
 A CSS Grid ideal for **card listing design** like tiles, videos or articles listing.
 
-No media queries, yet Chewing Grid will adjust the number of columns depending on the available width and your settings regarding:
+No media queries, yet chewing-grid will adjust the number of columns depending on the available width and your settings regarding:
 
 * the maximum number of columns
 * the minim and maximum card width
+
+chewing-grid provides atomic classes ready to use in your HTML (1 to 12 columns and widths in 50px intervals).
+You can also use it with Sass to generate your own classes, or even to build a custom semantic grid.
 
 Here's a GIF to show you how it looks.
 If you want to play with it, check out [the live demo](http://tzi.github.io/chewing-grid.css).
@@ -21,9 +24,7 @@ Install chewing-grid via bower and add it to bower.json dependencies
 
 ```sh
 bower install chewing-grid --save
-``` 
-
-You can use it with atomic classes, custom CSS rules or Sass mixins.
+```
 
 For example: the following HTML use atomic classes to create a grid where the cells are:
 
