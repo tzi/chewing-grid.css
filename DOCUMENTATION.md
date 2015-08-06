@@ -102,7 +102,7 @@ Add a `chew-row--card-max-{width}` markup, to set a maximum card width:
 
 ```html
 <!-- Ex: card width of 500px maximum -->
-<ul class="chew-row chew-row--card-min-500">
+<ul class="chew-row chew-row--card-max-500">
     <!-- [...] -->
 </ul>
 ```
@@ -170,11 +170,11 @@ Change the cell `padding`, to add a gutter between cards:
 
 ### 3.C. Limit the column number
 
-Change the cell `flex-basis` and the `width` to set a column limit: 
+Change the cell `width` to set a column limit: 
 
 ```css
 .myCardLit .chew-cell {
-    width: 25%;
+    width: 25%; /* 4 columns */
 }
 ```
 
