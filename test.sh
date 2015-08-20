@@ -1,17 +1,21 @@
 #!/bin/bash
 
 function confirm() {
-	read -p "  - Do you want to ${1} (Y/n)? " -n 1 -r;
-	echo '';
-	ANSWER=false;
-	if [ $REPLY = 'q' ];
-	then
-			exit 1
-	fi
-	if [[ $REPLY =~ ^[Yy]$ ]];
-	then
-			ANSWER=true;
-	fi
+  read -p "  - Do you want to ${1} (Y/n)? " -n 1 -r;
+  echo '';
+  ANSWER=false;
+  if [ $REPLY = 'q' ];
+  then
+          exit 1
+  fi
+  if [[ $REPLY =~ ^[Yy]$ ]];
+  then
+      ANSWER=true;
+  fi
+}
+
+function compile() {
+  sass $1 --style expanded --sourcemap=none
 }
 
 if [ $# -eq 0 ];
@@ -40,13 +44,13 @@ do
     confirm "generate a new one?"
     if [ $ANSWER == true ];
     then
-      sass ${SCSS_FILE} ${CSS_FILE} --style expanded
+      compile ${SCSS_FILE} > ${CSS_FILE}
     fi;
     continue;
   fi;
   
   # Compare compiled & expected
-  DIFF=$( sass ${SCSS_FILE} | diff ${CSS_FILE} - | wc -l);
+  DIFF=$( compile ${SCSS_FILE} | diff ${CSS_FILE} - | wc -l);
   if [ $DIFF -eq 0 ];
   then
     echo "${SCSS_FILE}: OK";
@@ -57,13 +61,13 @@ do
   confirm "see the difference?"
   if [ $ANSWER == true ];
   then
-    sass ${SCSS_FILE} | diff --side-by-side ${CSS_FILE} -;
+    compile ${SCSS_FILE} | diff --side-by-side ${CSS_FILE} -;
   fi;
   
   confirm "override the current result?"
   if [ $ANSWER == true ];
   then
-    sass ${SCSS_FILE} ${CSS_FILE} --style expanded
+    compile ${SCSS_FILE} > ${CSS_FILE}
   fi;
   
 done;
