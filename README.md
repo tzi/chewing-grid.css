@@ -20,10 +20,16 @@ If you want to play with it, check out [the live demo](http://tzi.github.io/chew
 Quick start
 -------
 
-Install chewing-grid via bower and add it to bower.json dependencies
+Install chewing-grid via npm
 
 ```sh
-bower install chewing-grid --save
+npm install chewing-grid.css --save
+```
+
+or via bower
+
+```sh
+bower install chewing-grid.css --save
 ```
 
 For example: the following HTML use atomic classes to create a grid where the cells are:
