@@ -1,5 +1,5 @@
 {
-  "name": "chewing-grid",
+  "name": "chewing-grid.css",
   "version": "3.0.2",
   "homepage": "https://github.com/tzi/chewing-grid.css",
   "authors": [
@@ -17,7 +17,6 @@
   "ignore": [
     "**/.*",
     "test",
-    "test.sh",
     "CONTRIBUTING.md"
   ]
 }

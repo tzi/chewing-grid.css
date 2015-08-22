@@ -1,5 +1,5 @@
 {
-  "name": "chewing-grid",
+  "name": "chewing-grid.css",
   "description": "A CSS Grid ideal for card listing design, responsive, no media-queries",
   "tags": ["grid", "card", "flexbox", "fluid"]
 }
