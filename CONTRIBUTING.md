@@ -21,4 +21,4 @@ Pull requests Workflow
 
 1. Fork the library repository
 2. Create a new branch for each feature or bugfix
-3. Send a pull request from each feature branch to the **gh-pages** branch
+3. Send a pull request from each feature branch to the **master** branch
