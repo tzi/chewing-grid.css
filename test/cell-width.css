@@ -15,8 +15,7 @@
   /* Unset list styles */
   list-style: none;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 .chew-cell {
   /* Flex implementation */
   -ms-flex: 1 0 auto;
@@ -42,8 +41,7 @@
   /* [fix] IE `flex-basis` doesn't account for `box-sizing: border-box` */
   width: auto;
   /* Trigger item wrapping with flexbox & inline-block */
-  min-width: 100px;
-}
+  min-width: 100px; }
 .chew-cell.chew-cell--ghost {
   /* Could be use to create ghost cells 
      And prevent your last item to expand
@@ -51,8 +49,7 @@
   */
   visibility: hidden;
   height: 0;
-  padding: 0;
-}
+  padding: 0; }
 .chew-card {
   /* Flex implementation */
   -ms-flex: 1 1 auto;
@@ -60,5 +57,4 @@
   /* Centered card */
   display: block;
   margin: 0 auto;
-  max-width: 150px;
-}
+  max-width: 150px; }
