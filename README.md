@@ -1,4 +1,4 @@
-chewing-grid.css
+chewing-grid.css [![Build Status](https://travis-ci.org/tzi/chewing-grid.css.svg)](https://travis-ci.org/tzi/chewing-grid.css)
 ======
 
 A CSS Grid ideal for **card listing design** like tiles, videos or articles listing.
