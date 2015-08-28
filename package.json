@@ -18,7 +18,8 @@
     "sass",
     "grid",
     "card",
-    "tiles"
+    "flexbox",
+    "fluid"
   ],
   "author": "Thomas ZILLIOX",
   "license": "MIT",
