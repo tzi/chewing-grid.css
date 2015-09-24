@@ -1,6 +1,6 @@
 {
   "name": "chewing-grid.css",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A CSS Grid ideal for card listing design like tiles, videos or articles listing",
   "main": "build/chewing-grid.css",
   "directories": {
