@@ -11,7 +11,7 @@ $chewing-grid__prefix: 'chew-';
 // Main mixin
 @mixin chewing-grid(
     $card-min-width: 200px,
-    $card-max-width: 300px,
+    $card-max-width: false,
     $card-gutter: 0,
     $column-max-count: auto,
     $prefix: $chewing-grid__prefix
@@ -36,7 +36,9 @@ $chewing-grid__prefix: 'chew-';
 
         &card {
             @include chewing-grid__card();
-            max-width: $card-max-width;
+            @if ($card-max-width) {
+                max-width: $card-max-width;
+            }
         }
     }
 }
